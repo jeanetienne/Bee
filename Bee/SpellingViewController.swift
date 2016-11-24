@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SpellingViewController.swift
 //  Bee
 //
 //  Created by Jean-Étienne on 6/11/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SpellingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
