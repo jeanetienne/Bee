@@ -8,17 +8,24 @@
 
 import UIKit
 
+import Speller
+
 class SpellingViewController: UIViewController {
+
+    @IBOutlet weak var phraseTextField: UITextField!
+
+    @IBOutlet weak var spellButton: UIButton!
+
+    @IBOutlet weak var spellingLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func spellingButtonDidTouchUpInside(_ sender: UIButton, forEvent event: UIEvent) {
+        let speller = Speller()
+        let spelling = speller.spell(phrase: "Bagpipe", withSpellingAlphabet: SpellingAlphabet.InternationalRadiotelephony)
+        spellingLabel.text = spelling.debugDescription
     }
-
 }
 

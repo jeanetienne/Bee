@@ -13,7 +13,7 @@
         <!--Spelling View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SpellingViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SpellingViewController" customModule="Bee" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,11 +21,58 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sqN-zH-ixc">
+                                <rect key="frame" x="16" y="28" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3hU-op-glo"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4w-DG-lnE">
+                                <rect key="frame" x="16" y="66" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="H0k-5w-nby"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="spellingButtonDidTouchUpInside:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wl0-Rn-bSC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfY-kz-suv">
+                                <rect key="frame" x="16" y="104" width="343" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Q99-Qs-8po"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WfY-kz-suv" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="FM3-WS-dmh"/>
+                            <constraint firstItem="sqN-zH-ixc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="IXr-jJ-52U"/>
+                            <constraint firstItem="Z4w-DG-lnE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ORk-hE-S6X"/>
+                            <constraint firstItem="WfY-kz-suv" firstAttribute="top" secondItem="Z4w-DG-lnE" secondAttribute="bottom" constant="8" id="S2t-sU-sNu"/>
+                            <constraint firstItem="sqN-zH-ixc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iFm-yt-7Pd"/>
+                            <constraint firstItem="Z4w-DG-lnE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="j01-HV-IcX"/>
+                            <constraint firstItem="WfY-kz-suv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="maR-Cy-9YB"/>
+                            <constraint firstItem="Z4w-DG-lnE" firstAttribute="top" secondItem="sqN-zH-ixc" secondAttribute="bottom" constant="8" id="pUW-SI-mMh"/>
+                            <constraint firstItem="sqN-zH-ixc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="trH-gR-Z4Y"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="phraseTextField" destination="sqN-zH-ixc" id="VbA-vJ-lNC"/>
+                        <outlet property="spellButton" destination="Z4w-DG-lnE" id="Yda-Io-wt1"/>
+                        <outlet property="spellingLabel" destination="WfY-kz-suv" id="mZt-xJ-ExO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
     </scenes>
 </document>
