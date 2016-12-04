@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F7167B701DEAFC9C00A90E85 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7167B6F1DEAFC9C00A90E85 /* Module.swift */; };
+		F75B29631DF3BEFF00C6B8DB /* UIViewController+KeyboardManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B29621DF3BEFF00C6B8DB /* UIViewController+KeyboardManagement.swift */; };
+		F75B29651DF3CC0300C6B8DB /* UIView+ToggleAlpha.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B29641DF3CC0300C6B8DB /* UIView+ToggleAlpha.swift */; };
 		F768D1211DCF17B40084E2EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F768D1201DCF17B40084E2EA /* AppDelegate.swift */; };
 		F768D1231DCF17B40084E2EA /* SpellingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F768D1221DCF17B40084E2EA /* SpellingViewController.swift */; };
 		F768D1261DCF17B40084E2EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F768D1241DCF17B40084E2EA /* Main.storyboard */; };
@@ -15,6 +17,7 @@
 		F768D12B1DCF17B40084E2EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F768D1291DCF17B40084E2EA /* LaunchScreen.storyboard */; };
 		F768D1361DCF17B40084E2EA /* BeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F768D1351DCF17B40084E2EA /* BeeTests.swift */; };
 		F768D1411DCF17B40084E2EA /* BeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F768D1401DCF17B40084E2EA /* BeeUITests.swift */; };
+		F7C22CDB1DF29E5600517239 /* UITableView+ReuseIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C22CDA1DF29E5600517239 /* UITableView+ReuseIdentifiers.swift */; };
 		F7D74ED51DE6E9DE002C278D /* Speller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D74ED41DE6E9DE002C278D /* Speller.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		F7167B6F1DEAFC9C00A90E85 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		F75B29621DF3BEFF00C6B8DB /* UIViewController+KeyboardManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+KeyboardManagement.swift"; sourceTree = "<group>"; };
+		F75B29641DF3CC0300C6B8DB /* UIView+ToggleAlpha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ToggleAlpha.swift"; sourceTree = "<group>"; };
 		F768D11D1DCF17B40084E2EA /* Bee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F768D1201DCF17B40084E2EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F768D1221DCF17B40084E2EA /* SpellingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellingViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +55,7 @@
 		F768D13C1DCF17B40084E2EA /* BeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F768D1401DCF17B40084E2EA /* BeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeUITests.swift; sourceTree = "<group>"; };
 		F768D1421DCF17B40084E2EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7C22CDA1DF29E5600517239 /* UITableView+ReuseIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+ReuseIdentifiers.swift"; sourceTree = "<group>"; };
 		F7D74ED41DE6E9DE002C278D /* Speller.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speller.framework; path = Carthage/Build/iOS/Speller.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +120,7 @@
 				F768D1201DCF17B40084E2EA /* AppDelegate.swift */,
 				F768D1221DCF17B40084E2EA /* SpellingViewController.swift */,
 				F7167B6E1DEAF04500A90E85 /* Architecture */,
+				F7C22CD91DF29E3A00517239 /* Tools */,
 				F768D1241DCF17B40084E2EA /* Main.storyboard */,
 				F768D1271DCF17B40084E2EA /* Assets.xcassets */,
 				F768D1291DCF17B40084E2EA /* LaunchScreen.storyboard */,
@@ -138,6 +145,16 @@
 				F768D1421DCF17B40084E2EA /* Info.plist */,
 			);
 			path = BeeUITests;
+			sourceTree = "<group>";
+		};
+		F7C22CD91DF29E3A00517239 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F7C22CDA1DF29E5600517239 /* UITableView+ReuseIdentifiers.swift */,
+				F75B29621DF3BEFF00C6B8DB /* UIViewController+KeyboardManagement.swift */,
+				F75B29641DF3CC0300C6B8DB /* UIView+ToggleAlpha.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		F7D74ED31DE6E9DE002C278D /* Frameworks */ = {
@@ -306,7 +323,10 @@
 			files = (
 				F768D1231DCF17B40084E2EA /* SpellingViewController.swift in Sources */,
 				F768D1211DCF17B40084E2EA /* AppDelegate.swift in Sources */,
+				F75B29631DF3BEFF00C6B8DB /* UIViewController+KeyboardManagement.swift in Sources */,
+				F75B29651DF3CC0300C6B8DB /* UIView+ToggleAlpha.swift in Sources */,
 				F7167B701DEAFC9C00A90E85 /* Module.swift in Sources */,
+				F7C22CDB1DF29E5600517239 /* UITableView+ReuseIdentifiers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
