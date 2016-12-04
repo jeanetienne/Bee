@@ -28,8 +28,7 @@ class SpellingInteractor {
     // MARK: - User input
     func didSelectSpell(phrase: String?) {
         if let phrase = phrase {
-            let speller = Speller()
-            let spelling = speller.spell(phrase: phrase, withSpellingAlphabet: SpellingAlphabet.InternationalRadiotelephony)
+            let spelling = Speller().spell(phrase: phrase, withSpellingAlphabet: SpellingAlphabet.InternationalRadiotelephony)
             view.updateSpelling(SpellingViewModel(withSpelling: spelling))
         }
     }
@@ -38,6 +37,4 @@ class SpellingInteractor {
         view.updateSpelling(SpellingViewModel(withSpelling: []))
     }
 
-    // MARK: - View update
-    
 }
