@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7167B701DEAFC9C00A90E85 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7167B6F1DEAFC9C00A90E85 /* Module.swift */; };
 		F768D1211DCF17B40084E2EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F768D1201DCF17B40084E2EA /* AppDelegate.swift */; };
 		F768D1231DCF17B40084E2EA /* SpellingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F768D1221DCF17B40084E2EA /* SpellingViewController.swift */; };
 		F768D1261DCF17B40084E2EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F768D1241DCF17B40084E2EA /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F7167B6F1DEAFC9C00A90E85 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		F768D11D1DCF17B40084E2EA /* Bee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F768D1201DCF17B40084E2EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F768D1221DCF17B40084E2EA /* SpellingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellingViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F7167B6E1DEAF04500A90E85 /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				F7167B6F1DEAFC9C00A90E85 /* Module.swift */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
 		F768D1141DCF17B40084E2EA = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 			children = (
 				F768D1201DCF17B40084E2EA /* AppDelegate.swift */,
 				F768D1221DCF17B40084E2EA /* SpellingViewController.swift */,
+				F7167B6E1DEAF04500A90E85 /* Architecture */,
 				F768D1241DCF17B40084E2EA /* Main.storyboard */,
 				F768D1271DCF17B40084E2EA /* Assets.xcassets */,
 				F768D1291DCF17B40084E2EA /* LaunchScreen.storyboard */,
@@ -295,6 +306,7 @@
 			files = (
 				F768D1231DCF17B40084E2EA /* SpellingViewController.swift in Sources */,
 				F768D1211DCF17B40084E2EA /* AppDelegate.swift in Sources */,
+				F7167B701DEAFC9C00A90E85 /* Module.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
