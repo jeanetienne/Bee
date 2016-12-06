@@ -22,8 +22,12 @@ class SettingsInteractor {
         self.completionHandler = completionHandler
     }
 
-    func dismissModule() {
+    private func dismissModule() {
         self.completionHandler(self.view)
     }
 
+    // MARK: - User input
+    func didSelectClose() {
+        self.dismissModule()
+    }
 }
