@@ -49,6 +49,7 @@ class SpellingView: UIViewController {
             spellingViewModel.numberOfSpelledCharacters > 0
         }
         spellingTableView.reloadData()
+        phraseTextField.resignFirstResponder()
     }
 }
 
@@ -80,7 +81,6 @@ extension SpellingView: UITextFieldDelegate {
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         interactor.didSelectSpell(phrase: textField.text)
-        textField.resignFirstResponder()
         return false
     }
 
