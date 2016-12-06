@@ -14,10 +14,13 @@ class SpellingInteractor {
 
     var view: SpellingView
 
+    var router: SpellingRouter
+
     var completionHandler: ModuleCompletionHandler
 
-    init(view: SpellingView, completionHandler: @escaping ModuleCompletionHandler) {
+    init(view: SpellingView, router: SpellingRouter, completionHandler: @escaping ModuleCompletionHandler) {
         self.view = view
+        self.router = router
         self.completionHandler = completionHandler
     }
 
