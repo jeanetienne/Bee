@@ -24,11 +24,15 @@ class SpellingInteractor {
         self.completionHandler = completionHandler
     }
 
-    func dismissModule() {
+    private func dismissModule() {
         self.completionHandler(self.view)
     }
 
     // MARK: - User input
+    func didSelectSettings() {
+        router.showSettings()
+    }
+
     func didSelectSpell(phrase: String?) {
         if let phrase = phrase {
             let spelling = Speller().spell(phrase: phrase, withSpellingAlphabet: SpellingAlphabet.InternationalRadiotelephony)

@@ -12,6 +12,8 @@ class SpellingView: UIViewController {
 
     @IBOutlet weak var phraseTextField: UITextField!
 
+    @IBOutlet weak var settingsButton: UIButton!
+
     @IBOutlet weak var spellButton: UIButton!
 
     @IBOutlet weak var spellingTableView: UITableView!
@@ -23,8 +25,10 @@ class SpellingView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        settingsButton.setTitle("Settings", for: UIControlState.normal)
         spellButton.setTitle("Spell", for: UIControlState.normal)
         self.spellingTableView.alpha = 0
+
         let cell = UINib(nibName: String(describing: SpelledCharacterTableViewCell.self), bundle: Bundle.main)
         spellingTableView.register(cell, forCellOfClass: SpelledCharacterTableViewCell.self)
         phraseTextField.delegate = self
@@ -36,6 +40,10 @@ class SpellingView: UIViewController {
             UIViewController.handleKeyboardWillHide(withNotification: notification,
                                                     onScrollView: self.spellingTableView)
         }
+    }
+
+    @IBAction func settingsButtonDidTouchUpInside(_ sender: UIButton, forEvent event: UIEvent) {
+        interactor.didSelectSettings()
     }
 
     @IBAction func spellingButtonDidTouchUpInside(_ sender: UIButton, forEvent event: UIEvent) {
