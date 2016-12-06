@@ -26,6 +26,7 @@
 		F7B534E11DF5879600BD317F /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B534E01DF5879600BD317F /* ActionViewController.swift */; };
 		F7B534E41DF5879600BD317F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B534E21DF5879600BD317F /* MainInterface.storyboard */; };
 		F7B534E81DF5879600BD317F /* QuickSpell.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F7B534DE1DF5879600BD317F /* QuickSpell.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F7B534EE1DF6AA1900BD317F /* QuickSpell.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B534ED1DF6AA1900BD317F /* QuickSpell.xcassets */; };
 		F7C22CDB1DF29E5600517239 /* UITableView+ReuseIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C22CDA1DF29E5600517239 /* UITableView+ReuseIdentifiers.swift */; };
 		F7D74ED51DE6E9DE002C278D /* Speller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D74ED41DE6E9DE002C278D /* Speller.framework */; };
 /* End PBXBuildFile section */
@@ -95,6 +96,7 @@
 		F7B534E01DF5879600BD317F /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		F7B534E31DF5879600BD317F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		F7B534E51DF5879600BD317F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7B534ED1DF6AA1900BD317F /* QuickSpell.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = QuickSpell.xcassets; sourceTree = "<group>"; };
 		F7C22CDA1DF29E5600517239 /* UITableView+ReuseIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+ReuseIdentifiers.swift"; sourceTree = "<group>"; };
 		F7D74ED41DE6E9DE002C278D /* Speller.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speller.framework; path = Carthage/Build/iOS/Speller.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -224,6 +226,7 @@
 				F7B534E01DF5879600BD317F /* ActionViewController.swift */,
 				F7B534E21DF5879600BD317F /* MainInterface.storyboard */,
 				F7B534E51DF5879600BD317F /* Info.plist */,
+				F7B534ED1DF6AA1900BD317F /* QuickSpell.xcassets */,
 			);
 			path = QuickSpell;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7B534EE1DF6AA1900BD317F /* QuickSpell.xcassets in Resources */,
 				F7B534E41DF5879600BD317F /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -712,6 +716,7 @@
 		F7B534E91DF5879600BD317F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N44EJ7YB22;
 				INFOPLIST_FILE = QuickSpell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -725,6 +730,7 @@
 		F7B534EA1DF5879600BD317F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N44EJ7YB22;
 				INFOPLIST_FILE = QuickSpell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
