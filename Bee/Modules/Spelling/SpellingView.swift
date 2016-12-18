@@ -12,6 +12,8 @@ class SpellingView: UIViewController {
 
     @IBOutlet weak var phraseTextField: UITextField!
 
+    @IBOutlet weak var settingsButton: UIButton!
+
     @IBOutlet weak var spellButton: UIButton!
 
     @IBOutlet weak var spellingTableView: UITableView!
@@ -20,11 +22,15 @@ class SpellingView: UIViewController {
 
     var spellingViewModel: SpellingViewModel!
 
+    var alphabets: [String] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        settingsButton.setTitle("Settings", for: UIControlState.normal)
         spellButton.setTitle("Spell", for: UIControlState.normal)
         self.spellingTableView.alpha = 0
+
         let cell = UINib(nibName: String(describing: SpelledCharacterTableViewCell.self), bundle: Bundle.main)
         spellingTableView.register(cell, forCellOfClass: SpelledCharacterTableViewCell.self)
         phraseTextField.delegate = self
@@ -36,6 +42,12 @@ class SpellingView: UIViewController {
             UIViewController.handleKeyboardWillHide(withNotification: notification,
                                                     onScrollView: self.spellingTableView)
         }
+
+        interactor.didLoadView()
+    }
+
+    @IBAction func settingsButtonDidTouchUpInside(_ sender: UIButton, forEvent event: UIEvent) {
+        interactor.didSelectSettings()
     }
 
     @IBAction func spellingButtonDidTouchUpInside(_ sender: UIButton, forEvent event: UIEvent) {
@@ -43,13 +55,43 @@ class SpellingView: UIViewController {
     }
 
     // MARK: - Interactor callbacks
+    func updateAlphabets(_ alphabets: [String]) {
+        self.alphabets = alphabets
+    }
+
     func updateSpelling(_ spellingViewModel: SpellingViewModel) {
         self.spellingViewModel = spellingViewModel
         spellingTableView.toggleAlpha(withDuration: 0.1) {
             spellingViewModel.numberOfSpelledCharacters > 0
         }
         spellingTableView.reloadData()
+        phraseTextField.resignFirstResponder()
     }
+}
+
+extension SpellingView: UIPickerViewDataSource {
+
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return alphabets.count
+    }
+
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let alphabetName = alphabets[row]
+        interactor.didSelectAlphabet(alphabet: alphabetName, phrase: phraseTextField.text)
+    }
+
+}
+
+extension SpellingView: UIPickerViewDelegate {
+
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return alphabets[row]
+    }
+
 }
 
 extension SpellingView: UITableViewDataSource {
@@ -80,7 +122,6 @@ extension SpellingView: UITextFieldDelegate {
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         interactor.didSelectSpell(phrase: textField.text)
-        textField.resignFirstResponder()
         return false
     }
 
