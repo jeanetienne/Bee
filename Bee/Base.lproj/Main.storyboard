@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,7 +33,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vT0-mt-mdq">
-                                <rect key="frame" x="0.0" y="148" width="375" height="519"/>
+                                <rect key="frame" x="0.0" y="240" width="375" height="427"/>
                                 <color key="backgroundColor" red="1" green="0.79573102679999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="743-Km-pOt"/>
@@ -41,41 +41,56 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDc-I9-j9q">
-                                <rect key="frame" x="16" y="72" width="343" height="30"/>
+                                <rect key="frame" x="16" y="164" width="343" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.9380980659" blue="0.69695870540000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Ccf-Aq-0Hm"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Settings"/>
                                 <connections>
                                     <action selector="settingsButtonDidTouchUpInside:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mjg-22-Mjp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4w-DG-lnE">
-                                <rect key="frame" x="16" y="110" width="343" height="30"/>
+                                <rect key="frame" x="16" y="202" width="343" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.9380980659" blue="0.69695870540000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="H0k-5w-nby"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Spell"/>
                                 <connections>
                                     <action selector="spellingButtonDidTouchUpInside:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wl0-Rn-bSC"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fQy-S1-xaa">
+                                <rect key="frame" x="0.0" y="72" width="375" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="t8h-We-fph"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="dpU-o2-yd1"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="PAY-ZU-3Na"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.79573102679999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="fDc-I9-j9q" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="1vI-m9-PGv"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vT0-mt-mdq" secondAttribute="bottom" id="6Cn-Di-i0c"/>
+                            <constraint firstAttribute="trailing" secondItem="fQy-S1-xaa" secondAttribute="trailing" id="GdA-dx-pox"/>
                             <constraint firstItem="sqN-zH-ixc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="IXr-jJ-52U"/>
+                            <constraint firstItem="fQy-S1-xaa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JVP-vl-xjx"/>
                             <constraint firstItem="Z4w-DG-lnE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ORk-hE-S6X"/>
                             <constraint firstAttribute="trailing" secondItem="vT0-mt-mdq" secondAttribute="trailing" id="YaS-qL-off"/>
                             <constraint firstItem="vT0-mt-mdq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aF9-Io-tCh"/>
                             <constraint firstItem="fDc-I9-j9q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="apa-fm-6cd"/>
                             <constraint firstItem="Z4w-DG-lnE" firstAttribute="top" secondItem="fDc-I9-j9q" secondAttribute="bottom" constant="8" id="bpn-BA-x4x"/>
-                            <constraint firstItem="fDc-I9-j9q" firstAttribute="top" secondItem="sqN-zH-ixc" secondAttribute="bottom" constant="8" id="gtS-3i-4xz"/>
+                            <constraint firstItem="fDc-I9-j9q" firstAttribute="top" secondItem="sqN-zH-ixc" secondAttribute="bottom" constant="100" id="gtS-3i-4xz"/>
                             <constraint firstItem="sqN-zH-ixc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iFm-yt-7Pd"/>
                             <constraint firstItem="Z4w-DG-lnE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="j01-HV-IcX"/>
                             <constraint firstItem="vT0-mt-mdq" firstAttribute="top" secondItem="Z4w-DG-lnE" secondAttribute="bottom" constant="8" id="kku-OZ-1ON"/>
                             <constraint firstItem="sqN-zH-ixc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="trH-gR-Z4Y"/>
+                            <constraint firstItem="fQy-S1-xaa" firstAttribute="top" secondItem="sqN-zH-ixc" secondAttribute="bottom" constant="8" id="u3m-lt-gK5"/>
                         </constraints>
                     </view>
                     <connections>
