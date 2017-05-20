@@ -73,7 +73,7 @@ class SpellingInteractor {
 
     // MARK: - Private helpers
     func spell(phrase: String, withSpellingAlphabet alphabet: SpellingAlphabet) {
-        let spelling = Speller().spell(phrase: phrase, withSpellingAlphabet: alphabet)
+        let spelling = Speller.spell(phrase: phrase, withSpellingAlphabet: alphabet)
         view.updateSpelling(SpellingViewModel(withSpelling: spelling))
     }
 
