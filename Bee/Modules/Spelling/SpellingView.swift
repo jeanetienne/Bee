@@ -12,10 +12,6 @@ class SpellingView: UIViewController {
 
     @IBOutlet weak var phraseTextField: UITextField!
 
-    @IBOutlet weak var settingsButton: UIButton!
-
-    @IBOutlet weak var spellButton: UIButton!
-
     @IBOutlet weak var spellingTableView: UITableView!
 
     var interactor: SpellingInteractor!
@@ -27,8 +23,6 @@ class SpellingView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        settingsButton.setTitle("Settings", for: UIControlState.normal)
-        spellButton.setTitle("Spell", for: UIControlState.normal)
         self.spellingTableView.alpha = 0
 
         let cell = UINib(nibName: String(describing: SpelledCharacterTableViewCell.self), bundle: Bundle.main)
