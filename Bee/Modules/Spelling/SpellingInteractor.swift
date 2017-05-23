@@ -18,8 +18,26 @@ class SpellingInteractor {
 
     var completionHandler: ModuleCompletionHandler
 
-    let alphabets = ["International Radiotelephony",
-                     "US Financial", "LAPD", "French"]
+    let alphabets = [
+        "International Radiotelephony",
+        "US Financial",
+        "LAPD",
+        "Czech",
+        "Danish",
+        "Dutch",
+        "Finnish",
+        "French",
+        "German",
+        "Italian",
+        "Norwegian",
+        "Portuguese",
+        "PortugueseBrazilian",
+        "Slovene",
+        "Spanish",
+        "Swedish",
+        "Turkish",
+        "PGPWordList",
+    ]
 
     var selectedAlphabet = SpellingAlphabet.InternationalRadiotelephony
 
@@ -50,8 +68,36 @@ class SpellingInteractor {
             selectedAlphabet = SpellingAlphabet.USFinancial
         case "LAPD":
             selectedAlphabet = SpellingAlphabet.LAPD
+        case "Czech":
+            selectedAlphabet = SpellingAlphabet.Czech
+        case "Danish":
+            selectedAlphabet = SpellingAlphabet.Danish
+        case "Dutch":
+            selectedAlphabet = SpellingAlphabet.Dutch
+        case "Finnish":
+            selectedAlphabet = SpellingAlphabet.Finnish
         case "French":
             selectedAlphabet = SpellingAlphabet.French
+        case "German":
+            selectedAlphabet = SpellingAlphabet.German
+        case "Italian":
+            selectedAlphabet = SpellingAlphabet.Italian
+        case "Norwegian":
+            selectedAlphabet = SpellingAlphabet.Norwegian
+        case "Portuguese":
+            selectedAlphabet = SpellingAlphabet.Portuguese
+        case "PortugueseBrazilian":
+            selectedAlphabet = SpellingAlphabet.PortugueseBrazilian
+        case "Slovene":
+            selectedAlphabet = SpellingAlphabet.Slovene
+        case "Spanish":
+            selectedAlphabet = SpellingAlphabet.Spanish
+        case "Swedish":
+            selectedAlphabet = SpellingAlphabet.Swedish
+        case "Turkish":
+            selectedAlphabet = SpellingAlphabet.Turkish
+        case "PGPWordList":
+            selectedAlphabet = SpellingAlphabet.PGPWordList
         default:
             selectedAlphabet = SpellingAlphabet.InternationalRadiotelephony
         }
