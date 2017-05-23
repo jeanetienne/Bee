@@ -27,7 +27,7 @@ class SpelledCharacterTableViewCell: UITableViewCell {
 
     func configure(withViewModel viewModel: SpelledCharacterViewModel) {
         characterLabel.text = viewModel.character
-        descriptionLabel.text = viewModel.codeWord
+        descriptionLabel.text = viewModel.description
     }
 
 }

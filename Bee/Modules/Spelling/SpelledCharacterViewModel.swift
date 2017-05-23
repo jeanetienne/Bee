@@ -14,16 +14,19 @@ struct SpelledCharacterViewModel {
 
     let character: String
 
-    let codeWord: String
+    let description: String
 
     init(withSpelledCharacter aSpelledCharacter: SpelledCharacter) {
         switch aSpelledCharacter {
         case .Match(let spelledCharacter, let codeWordCollection):
-            character = String(spelledCharacter)
-            codeWord = codeWordCollection.mainCodeWord
+            character = spelledCharacter
+            description = codeWordCollection.mainCodeWord
         case .Unknown(let spelledCharacter):
-            character = String(spelledCharacter)
-            codeWord = "Could not find a code word"
+            character = spelledCharacter
+            description = "Could not find a code word"
+        case .Description(let spelledCharacter, let characterDescription):
+            character = spelledCharacter
+            description = characterDescription
         }
     }
 
