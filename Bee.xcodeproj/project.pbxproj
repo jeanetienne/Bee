@@ -23,6 +23,14 @@
 		F768D12B1DCF17B40084E2EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F768D1291DCF17B40084E2EA /* LaunchScreen.storyboard */; };
 		F768D1361DCF17B40084E2EA /* BeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F768D1351DCF17B40084E2EA /* BeeTests.swift */; };
 		F768D1411DCF17B40084E2EA /* BeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F768D1401DCF17B40084E2EA /* BeeUITests.swift */; };
+		F784359F1ED51BC50044A9C1 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F784359E1ED51BC50044A9C1 /* SnapshotHelper.swift */; };
+		F78435B01ED51C640044A9C1 /* SDStatusBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F78435A21ED51C640044A9C1 /* SDStatusBarManager.m */; };
+		F78435B11ED51C640044A9C1 /* SDStatusBarOverriderPost10_0.m in Sources */ = {isa = PBXBuildFile; fileRef = F78435A51ED51C640044A9C1 /* SDStatusBarOverriderPost10_0.m */; };
+		F78435B21ED51C640044A9C1 /* SDStatusBarOverriderPost10_3.m in Sources */ = {isa = PBXBuildFile; fileRef = F78435A71ED51C640044A9C1 /* SDStatusBarOverriderPost10_3.m */; };
+		F78435B31ED51C640044A9C1 /* SDStatusBarOverriderPost8_3.m in Sources */ = {isa = PBXBuildFile; fileRef = F78435A91ED51C640044A9C1 /* SDStatusBarOverriderPost8_3.m */; };
+		F78435B41ED51C640044A9C1 /* SDStatusBarOverriderPost9_0.m in Sources */ = {isa = PBXBuildFile; fileRef = F78435AB1ED51C640044A9C1 /* SDStatusBarOverriderPost9_0.m */; };
+		F78435B51ED51C640044A9C1 /* SDStatusBarOverriderPost9_3.m in Sources */ = {isa = PBXBuildFile; fileRef = F78435AD1ED51C640044A9C1 /* SDStatusBarOverriderPost9_3.m */; };
+		F78435B61ED51C640044A9C1 /* SDStatusBarOverriderPre8_3.m in Sources */ = {isa = PBXBuildFile; fileRef = F78435AF1ED51C640044A9C1 /* SDStatusBarOverriderPre8_3.m */; };
 		F7B534E11DF5879600BD317F /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B534E01DF5879600BD317F /* ActionViewController.swift */; };
 		F7B534E41DF5879600BD317F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B534E21DF5879600BD317F /* MainInterface.storyboard */; };
 		F7B534E81DF5879600BD317F /* QuickSpell.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F7B534DE1DF5879600BD317F /* QuickSpell.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -95,6 +103,23 @@
 		F768D13C1DCF17B40084E2EA /* BeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F768D1401DCF17B40084E2EA /* BeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeUITests.swift; sourceTree = "<group>"; };
 		F768D1421DCF17B40084E2EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F784359E1ED51BC50044A9C1 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		F78435A11ED51C640044A9C1 /* SDStatusBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDStatusBarManager.h; sourceTree = "<group>"; };
+		F78435A21ED51C640044A9C1 /* SDStatusBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDStatusBarManager.m; sourceTree = "<group>"; };
+		F78435A31ED51C640044A9C1 /* SDStatusBarOverrider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDStatusBarOverrider.h; sourceTree = "<group>"; };
+		F78435A41ED51C640044A9C1 /* SDStatusBarOverriderPost10_0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDStatusBarOverriderPost10_0.h; sourceTree = "<group>"; };
+		F78435A51ED51C640044A9C1 /* SDStatusBarOverriderPost10_0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDStatusBarOverriderPost10_0.m; sourceTree = "<group>"; };
+		F78435A61ED51C640044A9C1 /* SDStatusBarOverriderPost10_3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDStatusBarOverriderPost10_3.h; sourceTree = "<group>"; };
+		F78435A71ED51C640044A9C1 /* SDStatusBarOverriderPost10_3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDStatusBarOverriderPost10_3.m; sourceTree = "<group>"; };
+		F78435A81ED51C640044A9C1 /* SDStatusBarOverriderPost8_3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDStatusBarOverriderPost8_3.h; sourceTree = "<group>"; };
+		F78435A91ED51C640044A9C1 /* SDStatusBarOverriderPost8_3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDStatusBarOverriderPost8_3.m; sourceTree = "<group>"; };
+		F78435AA1ED51C640044A9C1 /* SDStatusBarOverriderPost9_0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDStatusBarOverriderPost9_0.h; sourceTree = "<group>"; };
+		F78435AB1ED51C640044A9C1 /* SDStatusBarOverriderPost9_0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDStatusBarOverriderPost9_0.m; sourceTree = "<group>"; };
+		F78435AC1ED51C640044A9C1 /* SDStatusBarOverriderPost9_3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDStatusBarOverriderPost9_3.h; sourceTree = "<group>"; };
+		F78435AD1ED51C640044A9C1 /* SDStatusBarOverriderPost9_3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDStatusBarOverriderPost9_3.m; sourceTree = "<group>"; };
+		F78435AE1ED51C640044A9C1 /* SDStatusBarOverriderPre8_3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDStatusBarOverriderPre8_3.h; sourceTree = "<group>"; };
+		F78435AF1ED51C640044A9C1 /* SDStatusBarOverriderPre8_3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDStatusBarOverriderPre8_3.m; sourceTree = "<group>"; };
+		F78435B71ED51C790044A9C1 /* BeeUITestsBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeeUITestsBridgingHeader.h; sourceTree = "<group>"; };
 		F7B534DE1DF5879600BD317F /* QuickSpell.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QuickSpell.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B534E01DF5879600BD317F /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		F7B534E31DF5879600BD317F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
@@ -221,10 +246,35 @@
 		F768D13F1DCF17B40084E2EA /* BeeUITests */ = {
 			isa = PBXGroup;
 			children = (
+				F78435B71ED51C790044A9C1 /* BeeUITestsBridgingHeader.h */,
 				F768D1401DCF17B40084E2EA /* BeeUITests.swift */,
+				F784359E1ED51BC50044A9C1 /* SnapshotHelper.swift */,
+				F78435A01ED51C640044A9C1 /* SDStatusBarManager */,
 				F768D1421DCF17B40084E2EA /* Info.plist */,
 			);
 			path = BeeUITests;
+			sourceTree = "<group>";
+		};
+		F78435A01ED51C640044A9C1 /* SDStatusBarManager */ = {
+			isa = PBXGroup;
+			children = (
+				F78435A11ED51C640044A9C1 /* SDStatusBarManager.h */,
+				F78435A21ED51C640044A9C1 /* SDStatusBarManager.m */,
+				F78435A31ED51C640044A9C1 /* SDStatusBarOverrider.h */,
+				F78435A41ED51C640044A9C1 /* SDStatusBarOverriderPost10_0.h */,
+				F78435A51ED51C640044A9C1 /* SDStatusBarOverriderPost10_0.m */,
+				F78435A61ED51C640044A9C1 /* SDStatusBarOverriderPost10_3.h */,
+				F78435A71ED51C640044A9C1 /* SDStatusBarOverriderPost10_3.m */,
+				F78435A81ED51C640044A9C1 /* SDStatusBarOverriderPost8_3.h */,
+				F78435A91ED51C640044A9C1 /* SDStatusBarOverriderPost8_3.m */,
+				F78435AA1ED51C640044A9C1 /* SDStatusBarOverriderPost9_0.h */,
+				F78435AB1ED51C640044A9C1 /* SDStatusBarOverriderPost9_0.m */,
+				F78435AC1ED51C640044A9C1 /* SDStatusBarOverriderPost9_3.h */,
+				F78435AD1ED51C640044A9C1 /* SDStatusBarOverriderPost9_3.m */,
+				F78435AE1ED51C640044A9C1 /* SDStatusBarOverriderPre8_3.h */,
+				F78435AF1ED51C640044A9C1 /* SDStatusBarOverriderPre8_3.m */,
+			);
+			path = SDStatusBarManager;
 			sourceTree = "<group>";
 		};
 		F7B534DF1DF5879600BD317F /* QuickSpell */ = {
@@ -501,7 +551,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F78435B21ED51C640044A9C1 /* SDStatusBarOverriderPost10_3.m in Sources */,
 				F768D1411DCF17B40084E2EA /* BeeUITests.swift in Sources */,
+				F78435B31ED51C640044A9C1 /* SDStatusBarOverriderPost8_3.m in Sources */,
+				F78435B51ED51C640044A9C1 /* SDStatusBarOverriderPost9_3.m in Sources */,
+				F78435B61ED51C640044A9C1 /* SDStatusBarOverriderPre8_3.m in Sources */,
+				F78435B41ED51C640044A9C1 /* SDStatusBarOverriderPost9_0.m in Sources */,
+				F78435B11ED51C640044A9C1 /* SDStatusBarOverriderPost10_0.m in Sources */,
+				F78435B01ED51C640044A9C1 /* SDStatusBarManager.m in Sources */,
+				F784359F1ED51BC50044A9C1 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
