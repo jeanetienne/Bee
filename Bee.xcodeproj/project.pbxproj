@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		F7167B701DEAFC9C00A90E85 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7167B6F1DEAFC9C00A90E85 /* Module.swift */; };
+		F73511851ED7B21900D82895 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73511841ED7B21900D82895 /* Colors.swift */; };
+		F73511871ED7B51700D82895 /* UIView+Inspectables.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73511861ED7B51700D82895 /* UIView+Inspectables.swift */; };
+		F74F5CAD1EDC34D2004114B9 /* PhraseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F5CAC1EDC34D2004114B9 /* PhraseTextField.swift */; };
 		F75B29631DF3BEFF00C6B8DB /* UIViewController+KeyboardManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B29621DF3BEFF00C6B8DB /* UIViewController+KeyboardManagement.swift */; };
 		F75B29651DF3CC0300C6B8DB /* UIView+ToggleAlpha.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B29641DF3CC0300C6B8DB /* UIView+ToggleAlpha.swift */; };
 		F75B296F1DF3D4C900C6B8DB /* SpelledCharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B29681DF3D4C900C6B8DB /* SpelledCharacterTableViewCell.swift */; };
@@ -79,6 +82,9 @@
 
 /* Begin PBXFileReference section */
 		F7167B6F1DEAFC9C00A90E85 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		F73511841ED7B21900D82895 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		F73511861ED7B51700D82895 /* UIView+Inspectables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Inspectables.swift"; sourceTree = "<group>"; };
+		F74F5CAC1EDC34D2004114B9 /* PhraseTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhraseTextField.swift; sourceTree = "<group>"; };
 		F75B29621DF3BEFF00C6B8DB /* UIViewController+KeyboardManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+KeyboardManagement.swift"; sourceTree = "<group>"; };
 		F75B29641DF3CC0300C6B8DB /* UIView+ToggleAlpha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ToggleAlpha.swift"; sourceTree = "<group>"; };
 		F75B29681DF3D4C900C6B8DB /* SpelledCharacterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpelledCharacterTableViewCell.swift; sourceTree = "<group>"; };
@@ -167,6 +173,16 @@
 			path = Architecture;
 			sourceTree = "<group>";
 		};
+		F73511831ED7B20500D82895 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				F73511841ED7B21900D82895 /* Colors.swift */,
+				F73511861ED7B51700D82895 /* UIView+Inspectables.swift */,
+				F74F5CAC1EDC34D2004114B9 /* PhraseTextField.swift */,
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
 		F75B29661DF3D4C900C6B8DB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +233,7 @@
 			children = (
 				F768D1201DCF17B40084E2EA /* AppDelegate.swift */,
 				F75B29661DF3D4C900C6B8DB /* Modules */,
+				F73511831ED7B20500D82895 /* Appearance */,
 				F7167B6E1DEAF04500A90E85 /* Architecture */,
 				F7C22CD91DF29E3A00517239 /* Tools */,
 				F768D1241DCF17B40084E2EA /* Main.storyboard */,
@@ -495,12 +512,15 @@
 				F768D1211DCF17B40084E2EA /* AppDelegate.swift in Sources */,
 				F75B29711DF3D4C900C6B8DB /* SpelledCharacterViewModel.swift in Sources */,
 				F75B29631DF3BEFF00C6B8DB /* UIViewController+KeyboardManagement.swift in Sources */,
+				F74F5CAD1EDC34D2004114B9 /* PhraseTextField.swift in Sources */,
 				F75B29651DF3CC0300C6B8DB /* UIView+ToggleAlpha.swift in Sources */,
 				F75B29721DF3D4C900C6B8DB /* SpellingInteractor.swift in Sources */,
+				F73511851ED7B21900D82895 /* Colors.swift in Sources */,
 				F7167B701DEAFC9C00A90E85 /* Module.swift in Sources */,
 				F75B29751DF3D4C900C6B8DB /* SpellingViewModel.swift in Sources */,
 				F7C22CDB1DF29E5600517239 /* UITableView+ReuseIdentifiers.swift in Sources */,
 				F75B296F1DF3D4C900C6B8DB /* SpelledCharacterTableViewCell.swift in Sources */,
+				F73511871ED7B51700D82895 /* UIView+Inspectables.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
