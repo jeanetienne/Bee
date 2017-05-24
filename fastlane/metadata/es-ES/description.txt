@@ -1,0 +1,1 @@
+Bee le permite deletrear palabras con alfabetos por palabras.
