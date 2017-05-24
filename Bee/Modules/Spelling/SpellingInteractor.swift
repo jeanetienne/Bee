@@ -56,10 +56,6 @@ class SpellingInteractor {
         view.updateAlphabets(alphabets)
     }
 
-    func didSelectSettings() {
-        router.showSettings()
-    }
-
     func didSelectAlphabet(alphabet: String, phrase: String?) {
         switch alphabet {
         case "International Radiotelephony":

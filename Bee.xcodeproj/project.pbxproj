@@ -35,9 +35,6 @@
 		F7B534E41DF5879600BD317F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B534E21DF5879600BD317F /* MainInterface.storyboard */; };
 		F7B534E81DF5879600BD317F /* QuickSpell.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F7B534DE1DF5879600BD317F /* QuickSpell.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F7B534EE1DF6AA1900BD317F /* QuickSpell.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B534ED1DF6AA1900BD317F /* QuickSpell.xcassets */; };
-		F7B7A0841DF6C668003D9E61 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B7A0811DF6C668003D9E61 /* SettingsInteractor.swift */; };
-		F7B7A0851DF6C668003D9E61 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B7A0821DF6C668003D9E61 /* SettingsRouter.swift */; };
-		F7B7A0861DF6C668003D9E61 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B7A0831DF6C668003D9E61 /* SettingsView.swift */; };
 		F7C22CDB1DF29E5600517239 /* UITableView+ReuseIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C22CDA1DF29E5600517239 /* UITableView+ReuseIdentifiers.swift */; };
 		F7D74ED51DE6E9DE002C278D /* Speller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D74ED41DE6E9DE002C278D /* Speller.framework */; };
 /* End PBXBuildFile section */
@@ -125,9 +122,6 @@
 		F7B534E31DF5879600BD317F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		F7B534E51DF5879600BD317F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7B534ED1DF6AA1900BD317F /* QuickSpell.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = QuickSpell.xcassets; sourceTree = "<group>"; };
-		F7B7A0811DF6C668003D9E61 /* SettingsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
-		F7B7A0821DF6C668003D9E61 /* SettingsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
-		F7B7A0831DF6C668003D9E61 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F7C22CDA1DF29E5600517239 /* UITableView+ReuseIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+ReuseIdentifiers.swift"; sourceTree = "<group>"; };
 		F7D74ED41DE6E9DE002C278D /* Speller.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speller.framework; path = Carthage/Build/iOS/Speller.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,7 +170,6 @@
 		F75B29661DF3D4C900C6B8DB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				F7B7A07A1DF6C023003D9E61 /* Settings */,
 				F75B29671DF3D4C900C6B8DB /* Spelling */,
 			);
 			path = Modules;
@@ -286,16 +279,6 @@
 				F7B534ED1DF6AA1900BD317F /* QuickSpell.xcassets */,
 			);
 			path = QuickSpell;
-			sourceTree = "<group>";
-		};
-		F7B7A07A1DF6C023003D9E61 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				F7B7A0811DF6C668003D9E61 /* SettingsInteractor.swift */,
-				F7B7A0821DF6C668003D9E61 /* SettingsRouter.swift */,
-				F7B7A0831DF6C668003D9E61 /* SettingsView.swift */,
-			);
-			path = Settings;
 			sourceTree = "<group>";
 		};
 		F7C22CD91DF29E3A00517239 /* Tools */ = {
@@ -529,13 +512,10 @@
 				F75B29631DF3BEFF00C6B8DB /* UIViewController+KeyboardManagement.swift in Sources */,
 				F75B29651DF3CC0300C6B8DB /* UIView+ToggleAlpha.swift in Sources */,
 				F75B29721DF3D4C900C6B8DB /* SpellingInteractor.swift in Sources */,
-				F7B7A0861DF6C668003D9E61 /* SettingsView.swift in Sources */,
 				F7167B701DEAFC9C00A90E85 /* Module.swift in Sources */,
 				F75B29751DF3D4C900C6B8DB /* SpellingViewModel.swift in Sources */,
 				F7C22CDB1DF29E5600517239 /* UITableView+ReuseIdentifiers.swift in Sources */,
-				F7B7A0851DF6C668003D9E61 /* SettingsRouter.swift in Sources */,
 				F75B296F1DF3D4C900C6B8DB /* SpelledCharacterTableViewCell.swift in Sources */,
-				F7B7A0841DF6C668003D9E61 /* SettingsInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

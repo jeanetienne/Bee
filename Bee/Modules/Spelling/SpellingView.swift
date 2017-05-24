@@ -40,14 +40,6 @@ class SpellingView: UIViewController {
         interactor.didLoadView()
     }
 
-    @IBAction func settingsButtonDidTouchUpInside(_ sender: UIButton, forEvent event: UIEvent) {
-        interactor.didSelectSettings()
-    }
-
-    @IBAction func spellingButtonDidTouchUpInside(_ sender: UIButton, forEvent event: UIEvent) {
-        interactor.didSelectSpell(phrase: phraseTextField.text)
-    }
-
     // MARK: - Interactor callbacks
     func updateAlphabets(_ alphabets: [String]) {
         self.alphabets = alphabets
