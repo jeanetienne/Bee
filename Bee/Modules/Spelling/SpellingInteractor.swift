@@ -12,31 +12,38 @@ import Speller
 
 class SpellingInteractor {
 
+    struct SpellingAlphabetDescription {
+        var name: String
+        var alphabet: SpellingAlphabet
+    }
+    
     var view: SpellingView
 
     var router: SpellingRouter
 
     var completionHandler: ModuleCompletionHandler
 
-    let alphabets = [
-        "International Radiotelephony",
-        "US Financial",
-        "LAPD",
-        "Czech",
-        "Danish",
-        "Dutch",
-        "Finnish",
-        "French",
-        "German",
-        "Italian",
-        "Norwegian",
-        "Portuguese",
-        "PortugueseBrazilian",
-        "Slovene",
-        "Spanish",
-        "Swedish",
-        "Turkish",
-        "PGPWordList",
+    var spellingTableViewManager = SpellingTableViewManager()
+    
+    let alphabets: [SpellingAlphabetDescription] = [
+        SpellingAlphabetDescription(name: "International Radiotelephony", alphabet: .InternationalRadiotelephony),
+        SpellingAlphabetDescription(name: "US Financial", alphabet: .USFinancial),
+        SpellingAlphabetDescription(name: "LAPD", alphabet: .LAPD),
+        SpellingAlphabetDescription(name: "Czech", alphabet: .Czech),
+        SpellingAlphabetDescription(name: "Danish", alphabet: .Danish),
+        SpellingAlphabetDescription(name: "Dutch", alphabet: .Dutch),
+        SpellingAlphabetDescription(name: "Finnish", alphabet: .Finnish),
+        SpellingAlphabetDescription(name: "French", alphabet: .French),
+        SpellingAlphabetDescription(name: "German", alphabet: .German),
+        SpellingAlphabetDescription(name: "Italian", alphabet: .Italian),
+        SpellingAlphabetDescription(name: "Norwegian", alphabet: .Norwegian),
+        SpellingAlphabetDescription(name: "Portuguese", alphabet: .Portuguese),
+        SpellingAlphabetDescription(name: "Brazilian Portuguese", alphabet: .PortugueseBrazilian),
+        SpellingAlphabetDescription(name: "Slovene", alphabet: .Slovene),
+        SpellingAlphabetDescription(name: "Spanish", alphabet: .Spanish),
+        SpellingAlphabetDescription(name: "Swedish", alphabet: .Swedish),
+        SpellingAlphabetDescription(name: "Turkish", alphabet: .Turkish),
+        SpellingAlphabetDescription(name: "PGP Word List", alphabet: .PGPWordList)
     ]
 
     var selectedAlphabet = SpellingAlphabet.InternationalRadiotelephony
@@ -48,56 +55,22 @@ class SpellingInteractor {
     }
 
     private func dismissModule() {
-        self.completionHandler(self.view)
+        completionHandler(self.view)
     }
 
     // MARK: - User input
     func didLoadView() {
-        view.updateAlphabets(alphabets)
+        view.setSpellingTableViewManager(manager: spellingTableViewManager)
+        view.updateAlphabets(alphabets.map { spellingAlphabetDescription -> String in
+            return spellingAlphabetDescription.name
+        })
     }
 
-    func didSelectAlphabet(alphabet: String, phrase: String?) {
-        switch alphabet {
-        case "International Radiotelephony":
-            selectedAlphabet = SpellingAlphabet.InternationalRadiotelephony
-        case "US Financial":
-            selectedAlphabet = SpellingAlphabet.USFinancial
-        case "LAPD":
-            selectedAlphabet = SpellingAlphabet.LAPD
-        case "Czech":
-            selectedAlphabet = SpellingAlphabet.Czech
-        case "Danish":
-            selectedAlphabet = SpellingAlphabet.Danish
-        case "Dutch":
-            selectedAlphabet = SpellingAlphabet.Dutch
-        case "Finnish":
-            selectedAlphabet = SpellingAlphabet.Finnish
-        case "French":
-            selectedAlphabet = SpellingAlphabet.French
-        case "German":
-            selectedAlphabet = SpellingAlphabet.German
-        case "Italian":
-            selectedAlphabet = SpellingAlphabet.Italian
-        case "Norwegian":
-            selectedAlphabet = SpellingAlphabet.Norwegian
-        case "Portuguese":
-            selectedAlphabet = SpellingAlphabet.Portuguese
-        case "PortugueseBrazilian":
-            selectedAlphabet = SpellingAlphabet.PortugueseBrazilian
-        case "Slovene":
-            selectedAlphabet = SpellingAlphabet.Slovene
-        case "Spanish":
-            selectedAlphabet = SpellingAlphabet.Spanish
-        case "Swedish":
-            selectedAlphabet = SpellingAlphabet.Swedish
-        case "Turkish":
-            selectedAlphabet = SpellingAlphabet.Turkish
-        case "PGPWordList":
-            selectedAlphabet = SpellingAlphabet.PGPWordList
-        default:
-            selectedAlphabet = SpellingAlphabet.InternationalRadiotelephony
-        }
-
+    func didSelectAlphabet(withName name: String, phrase: String?) {
+        selectedAlphabet = alphabets.first(where: { spellingAlphabetDescription -> Bool in
+            spellingAlphabetDescription.name == name
+        })?.alphabet ?? .InternationalRadiotelephony
+        
         if let phrase = phrase {
             spell(phrase: phrase, withSpellingAlphabet: selectedAlphabet)
         }
@@ -110,13 +83,17 @@ class SpellingInteractor {
     }
 
     func didSelectClear() {
-        view.updateSpelling(SpellingViewModel(withSpelling: []))
+        spellingTableViewManager.viewModel = SpellingViewModel(withSpelling: [])
+        view.updateSpelling(withNumberOfCharacters: 0)
     }
 
     // MARK: - Private helpers
     func spell(phrase: String, withSpellingAlphabet alphabet: SpellingAlphabet) {
         let spelling = Speller.spell(phrase: phrase, withSpellingAlphabet: alphabet)
-        view.updateSpelling(SpellingViewModel(withSpelling: spelling))
+        let spellingViewModel = SpellingViewModel(withSpelling: spelling)
+        
+        spellingTableViewManager.viewModel = spellingViewModel
+        view.updateSpelling(withNumberOfCharacters: spellingViewModel.numberOfSpelledCharacters)
     }
 
 }

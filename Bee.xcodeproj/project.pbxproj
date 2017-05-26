@@ -10,16 +10,17 @@
 		F7167B701DEAFC9C00A90E85 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7167B6F1DEAFC9C00A90E85 /* Module.swift */; };
 		F73511851ED7B21900D82895 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73511841ED7B21900D82895 /* Colors.swift */; };
 		F73511871ED7B51700D82895 /* UIView+Inspectables.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73511861ED7B51700D82895 /* UIView+Inspectables.swift */; };
+		F735118E1ED7C03000D82895 /* SpelledCharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73511891ED7C03000D82895 /* SpelledCharacterTableViewCell.swift */; };
+		F735118F1ED7C03000D82895 /* SpelledCharacterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F735118A1ED7C03000D82895 /* SpelledCharacterTableViewCell.xib */; };
+		F73511901ED7C03000D82895 /* SpelledCharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735118C1ED7C03000D82895 /* SpelledCharacterViewModel.swift */; };
+		F73511911ED7C03000D82895 /* SpellingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735118D1ED7C03000D82895 /* SpellingViewModel.swift */; };
+		F73511931ED7C05600D82895 /* SpellingTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73511921ED7C05600D82895 /* SpellingTableViewManager.swift */; };
 		F74F5CAD1EDC34D2004114B9 /* PhraseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F5CAC1EDC34D2004114B9 /* PhraseTextField.swift */; };
 		F75B29631DF3BEFF00C6B8DB /* UIViewController+KeyboardManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B29621DF3BEFF00C6B8DB /* UIViewController+KeyboardManagement.swift */; };
 		F75B29651DF3CC0300C6B8DB /* UIView+ToggleAlpha.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B29641DF3CC0300C6B8DB /* UIView+ToggleAlpha.swift */; };
-		F75B296F1DF3D4C900C6B8DB /* SpelledCharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B29681DF3D4C900C6B8DB /* SpelledCharacterTableViewCell.swift */; };
-		F75B29701DF3D4C900C6B8DB /* SpelledCharacterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F75B29691DF3D4C900C6B8DB /* SpelledCharacterTableViewCell.xib */; };
-		F75B29711DF3D4C900C6B8DB /* SpelledCharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B296A1DF3D4C900C6B8DB /* SpelledCharacterViewModel.swift */; };
 		F75B29721DF3D4C900C6B8DB /* SpellingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B296B1DF3D4C900C6B8DB /* SpellingInteractor.swift */; };
 		F75B29731DF3D4C900C6B8DB /* SpellingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B296C1DF3D4C900C6B8DB /* SpellingRouter.swift */; };
 		F75B29741DF3D4C900C6B8DB /* SpellingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B296D1DF3D4C900C6B8DB /* SpellingView.swift */; };
-		F75B29751DF3D4C900C6B8DB /* SpellingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B296E1DF3D4C900C6B8DB /* SpellingViewModel.swift */; };
 		F768D1211DCF17B40084E2EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F768D1201DCF17B40084E2EA /* AppDelegate.swift */; };
 		F768D1261DCF17B40084E2EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F768D1241DCF17B40084E2EA /* Main.storyboard */; };
 		F768D1281DCF17B40084E2EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F768D1271DCF17B40084E2EA /* Assets.xcassets */; };
@@ -84,16 +85,17 @@
 		F7167B6F1DEAFC9C00A90E85 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		F73511841ED7B21900D82895 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		F73511861ED7B51700D82895 /* UIView+Inspectables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Inspectables.swift"; sourceTree = "<group>"; };
+		F73511891ED7C03000D82895 /* SpelledCharacterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpelledCharacterTableViewCell.swift; sourceTree = "<group>"; };
+		F735118A1ED7C03000D82895 /* SpelledCharacterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpelledCharacterTableViewCell.xib; sourceTree = "<group>"; };
+		F735118C1ED7C03000D82895 /* SpelledCharacterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpelledCharacterViewModel.swift; sourceTree = "<group>"; };
+		F735118D1ED7C03000D82895 /* SpellingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellingViewModel.swift; sourceTree = "<group>"; };
+		F73511921ED7C05600D82895 /* SpellingTableViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellingTableViewManager.swift; sourceTree = "<group>"; };
 		F74F5CAC1EDC34D2004114B9 /* PhraseTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhraseTextField.swift; sourceTree = "<group>"; };
 		F75B29621DF3BEFF00C6B8DB /* UIViewController+KeyboardManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+KeyboardManagement.swift"; sourceTree = "<group>"; };
 		F75B29641DF3CC0300C6B8DB /* UIView+ToggleAlpha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ToggleAlpha.swift"; sourceTree = "<group>"; };
-		F75B29681DF3D4C900C6B8DB /* SpelledCharacterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpelledCharacterTableViewCell.swift; sourceTree = "<group>"; };
-		F75B29691DF3D4C900C6B8DB /* SpelledCharacterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpelledCharacterTableViewCell.xib; sourceTree = "<group>"; };
-		F75B296A1DF3D4C900C6B8DB /* SpelledCharacterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpelledCharacterViewModel.swift; sourceTree = "<group>"; };
 		F75B296B1DF3D4C900C6B8DB /* SpellingInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellingInteractor.swift; sourceTree = "<group>"; };
 		F75B296C1DF3D4C900C6B8DB /* SpellingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellingRouter.swift; sourceTree = "<group>"; };
 		F75B296D1DF3D4C900C6B8DB /* SpellingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellingView.swift; sourceTree = "<group>"; };
-		F75B296E1DF3D4C900C6B8DB /* SpellingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellingViewModel.swift; sourceTree = "<group>"; };
 		F768D11D1DCF17B40084E2EA /* Bee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F768D1201DCF17B40084E2EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F768D1251DCF17B40084E2EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -183,6 +185,25 @@
 			path = Appearance;
 			sourceTree = "<group>";
 		};
+		F73511881ED7C03000D82895 /* SpellingTableView */ = {
+			isa = PBXGroup;
+			children = (
+				F73511921ED7C05600D82895 /* SpellingTableViewManager.swift */,
+				F73511891ED7C03000D82895 /* SpelledCharacterTableViewCell.swift */,
+				F735118A1ED7C03000D82895 /* SpelledCharacterTableViewCell.xib */,
+			);
+			path = SpellingTableView;
+			sourceTree = "<group>";
+		};
+		F735118B1ED7C03000D82895 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F735118C1ED7C03000D82895 /* SpelledCharacterViewModel.swift */,
+				F735118D1ED7C03000D82895 /* SpellingViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		F75B29661DF3D4C900C6B8DB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,10 +218,8 @@
 				F75B296B1DF3D4C900C6B8DB /* SpellingInteractor.swift */,
 				F75B296C1DF3D4C900C6B8DB /* SpellingRouter.swift */,
 				F75B296D1DF3D4C900C6B8DB /* SpellingView.swift */,
-				F75B29681DF3D4C900C6B8DB /* SpelledCharacterTableViewCell.swift */,
-				F75B29691DF3D4C900C6B8DB /* SpelledCharacterTableViewCell.xib */,
-				F75B296A1DF3D4C900C6B8DB /* SpelledCharacterViewModel.swift */,
-				F75B296E1DF3D4C900C6B8DB /* SpellingViewModel.swift */,
+				F73511881ED7C03000D82895 /* SpellingTableView */,
+				F735118B1ED7C03000D82895 /* ViewModels */,
 			);
 			path = Spelling;
 			sourceTree = "<group>";
@@ -453,7 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F768D12B1DCF17B40084E2EA /* LaunchScreen.storyboard in Resources */,
-				F75B29701DF3D4C900C6B8DB /* SpelledCharacterTableViewCell.xib in Resources */,
+				F735118F1ED7C03000D82895 /* SpelledCharacterTableViewCell.xib in Resources */,
 				F768D1281DCF17B40084E2EA /* Assets.xcassets in Resources */,
 				F768D1261DCF17B40084E2EA /* Main.storyboard in Resources */,
 			);
@@ -507,20 +526,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F73511901ED7C03000D82895 /* SpelledCharacterViewModel.swift in Sources */,
+				F73511931ED7C05600D82895 /* SpellingTableViewManager.swift in Sources */,
+				F735118E1ED7C03000D82895 /* SpelledCharacterTableViewCell.swift in Sources */,
 				F75B29741DF3D4C900C6B8DB /* SpellingView.swift in Sources */,
 				F75B29731DF3D4C900C6B8DB /* SpellingRouter.swift in Sources */,
 				F768D1211DCF17B40084E2EA /* AppDelegate.swift in Sources */,
-				F75B29711DF3D4C900C6B8DB /* SpelledCharacterViewModel.swift in Sources */,
 				F75B29631DF3BEFF00C6B8DB /* UIViewController+KeyboardManagement.swift in Sources */,
 				F74F5CAD1EDC34D2004114B9 /* PhraseTextField.swift in Sources */,
 				F75B29651DF3CC0300C6B8DB /* UIView+ToggleAlpha.swift in Sources */,
 				F75B29721DF3D4C900C6B8DB /* SpellingInteractor.swift in Sources */,
 				F73511851ED7B21900D82895 /* Colors.swift in Sources */,
 				F7167B701DEAFC9C00A90E85 /* Module.swift in Sources */,
-				F75B29751DF3D4C900C6B8DB /* SpellingViewModel.swift in Sources */,
 				F7C22CDB1DF29E5600517239 /* UITableView+ReuseIdentifiers.swift in Sources */,
-				F75B296F1DF3D4C900C6B8DB /* SpelledCharacterTableViewCell.swift in Sources */,
 				F73511871ED7B51700D82895 /* UIView+Inspectables.swift in Sources */,
+				F73511911ED7C03000D82895 /* SpellingViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,8 +23,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="sqN-zH-ixc">
-                                <rect key="frame" x="16" y="28" width="343" height="36"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="sqN-zH-ixc" customClass="PhraseTextField" customModule="Bee" customModuleProvider="target">
+                                <rect key="frame" x="16" y="35" width="343" height="36"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="3hU-op-glo"/>
@@ -32,50 +33,46 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="1" green="0.75" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="18"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="backgroundColorName" value="Tertiary"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="borderColorName" value="Secondary"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                        <real key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vT0-mt-mdq">
-                                <rect key="frame" x="0.0" y="157" width="375" height="510"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vT0-mt-mdq">
+                                <rect key="frame" x="0.0" y="126" width="375" height="541"/>
                                 <color key="backgroundColor" red="1" green="0.875" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="743-Km-pOt"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="J6g-6D-371"/>
-                                </connections>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="backgroundColorName" value="Tertiary"/>
+                                </userDefinedRuntimeAttributes>
                             </tableView>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fQy-S1-xaa">
-                                <rect key="frame" x="0.0" y="72" width="375" height="65"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="t8h-We-fph"/>
                                 </constraints>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="dpU-o2-yd1"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="PAY-ZU-3Na"/>
-                                </connections>
-                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.875" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vT0-mt-mdq" secondAttribute="bottom" id="6Cn-Di-i0c"/>
-                            <constraint firstAttribute="trailing" secondItem="fQy-S1-xaa" secondAttribute="trailing" id="GdA-dx-pox"/>
-                            <constraint firstItem="sqN-zH-ixc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="IXr-jJ-52U"/>
-                            <constraint firstItem="fQy-S1-xaa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JVP-vl-xjx"/>
+                            <constraint firstItem="sqN-zH-ixc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="IXr-jJ-52U"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vT0-mt-mdq" secondAttribute="bottom" id="LzB-8o-vCf"/>
                             <constraint firstAttribute="trailing" secondItem="vT0-mt-mdq" secondAttribute="trailing" id="YaS-qL-off"/>
                             <constraint firstItem="vT0-mt-mdq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aF9-Io-tCh"/>
                             <constraint firstItem="sqN-zH-ixc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iFm-yt-7Pd"/>
-                            <constraint firstItem="vT0-mt-mdq" firstAttribute="top" secondItem="fQy-S1-xaa" secondAttribute="bottom" constant="20" id="kRu-aZ-4bi"/>
+                            <constraint firstItem="vT0-mt-mdq" firstAttribute="top" secondItem="cSL-i8-j8u" secondAttribute="bottom" constant="15" id="q2U-eS-xr1"/>
                             <constraint firstItem="sqN-zH-ixc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="trH-gR-Z4Y"/>
-                            <constraint firstItem="fQy-S1-xaa" firstAttribute="top" secondItem="sqN-zH-ixc" secondAttribute="bottom" constant="8" id="u3m-lt-gK5"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="backgroundColorName" value="Primary"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
                         <outlet property="phraseTextField" destination="sqN-zH-ixc" id="VbA-vJ-lNC"/>
@@ -84,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-642" y="-31"/>
+            <point key="canvasLocation" x="-642.39999999999998" y="-31.03448275862069"/>
         </scene>
     </scenes>
 </document>
