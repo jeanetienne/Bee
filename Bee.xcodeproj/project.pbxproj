@@ -771,6 +771,7 @@
 				PROVISIONING_PROFILE = "73c013f4-24ea-41f5-9b20-2db14424832a";
 				PROVISIONING_PROFILE_SPECIFIER = "Wildcard App Development";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -792,6 +793,7 @@
 				PROVISIONING_PROFILE = "4c7f6cac-ba90-4fa4-8ffc-ee8d733e9ef7";
 				PROVISIONING_PROFILE_SPECIFIER = "Bee - AppStore";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
