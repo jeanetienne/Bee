@@ -12,6 +12,8 @@ class SpellingView: UIViewController {
 
     @IBOutlet weak var phraseTextField: UITextField!
 
+    @IBOutlet weak var alphabetPicker: CollapsiblePicker!
+    
     @IBOutlet weak var spellingTableView: UITableView!
 
     var interactor: SpellingInteractor!
@@ -31,6 +33,7 @@ class SpellingView: UIViewController {
                                                     onScrollView: self.spellingTableView)
         }
 
+        alphabetPicker.delegate = self
         interactor.didLoadView()
     }
 
@@ -38,6 +41,11 @@ class SpellingView: UIViewController {
     func setSpellingTableViewManager(manager: SpellingTableViewManager) {
         spellingTableView.dataSource = manager
         spellingTableView.delegate = manager
+    }
+    
+    func updateAlphabets(_ updatedAlphabets: [String]) {
+        alphabetPicker.items = updatedAlphabets
+        alphabetPicker.selectItem(atIndex: 0)
     }
 
     func updateSpelling(withNumberOfCharacters numberOfCharacters: Int) {
@@ -57,6 +65,14 @@ extension SpellingView: UITextFieldDelegate {
     func textFieldShouldClear(_ textField: UITextField) -> Bool {
         interactor.didSelectClear()
         return true
+    }
+    
+}
+
+extension SpellingView: CollapsiblePickerDelegate {
+    
+    func pickerDidSelectItem(withName name: String) {
+        interactor.didSelectAlphabet(withName: name, phrase: phraseTextField.text)
     }
     
 }
