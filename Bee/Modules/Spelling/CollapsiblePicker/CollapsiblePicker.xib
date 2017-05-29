@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CollapsiblePicker" customModule="Bee" customModuleProvider="target">
+            <connections>
+                <outlet property="arrow" destination="low-aw-XYf" id="e3b-SX-CVd"/>
+                <outlet property="bottomGradient" destination="HPX-Lw-84i" id="oig-g6-Hk2"/>
+                <outlet property="bottomLine" destination="4lS-wg-ZMh" id="og0-sI-EKb"/>
+                <outlet property="pickerButton" destination="mMY-PA-hgd" id="9uP-Kw-NU9"/>
+                <outlet property="tableView" destination="kco-Ow-oOV" id="dHy-hD-z5R"/>
+                <outlet property="topGradient" destination="KGe-Ub-VLT" id="zaC-Jv-fNk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="432" height="217"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="low-aw-XYf" userLabel="Disclosure Arrow" customClass="DisclosureArrow" customModule="Bee" customModuleProvider="target">
+                    <rect key="frame" x="422" y="11" width="10" height="7"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="10" id="HIB-4R-Ld1"/>
+                        <constraint firstAttribute="height" constant="7" id="kTb-xK-thP"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMY-PA-hgd">
+                    <rect key="frame" x="0.0" y="0.0" width="432" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="rta-6U-y2K"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pickerDidTouchUpInside:forEvent:" destination="-1" eventType="touchUpInside" id="pDF-Oy-95X"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="24" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kco-Ow-oOV">
+                    <rect key="frame" x="0.0" y="26" width="432" height="191"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="backgroundColorName" value="Primary"/>
+                    </userDefinedRuntimeAttributes>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4lS-wg-ZMh" userLabel="Bottom Line">
+                    <rect key="frame" x="0.0" y="24" width="432" height="1"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="n3U-d9-nQf"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="backgroundColorName" value="Faded"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPX-Lw-84i" userLabel="Bottom Gradient" customClass="GradientView" customModule="Bee" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="211" width="422" height="6"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="6" id="U0A-28-RRS"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="reverse" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KGe-Ub-VLT" userLabel="Top Gradient" customClass="GradientView" customModule="Bee" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="26" width="422" height="6"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="6" id="qbN-cP-JDi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="4lS-wg-ZMh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="2O3-zd-KIt"/>
+                <constraint firstItem="KGe-Ub-VLT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8JP-Ul-7HL"/>
+                <constraint firstAttribute="trailing" secondItem="KGe-Ub-VLT" secondAttribute="trailing" constant="10" id="JoM-J8-Wix"/>
+                <constraint firstItem="low-aw-XYf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="11" id="LQM-Xc-Lum"/>
+                <constraint firstItem="mMY-PA-hgd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NFk-tR-oQf"/>
+                <constraint firstItem="kco-Ow-oOV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="OCs-ga-6ns"/>
+                <constraint firstItem="mMY-PA-hgd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Oxr-RD-1GL"/>
+                <constraint firstItem="HPX-Lw-84i" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RlN-W7-zUe"/>
+                <constraint firstAttribute="bottom" secondItem="kco-Ow-oOV" secondAttribute="bottom" id="S8B-qX-gRe"/>
+                <constraint firstAttribute="trailing" secondItem="kco-Ow-oOV" secondAttribute="trailing" id="WGx-03-ILp"/>
+                <constraint firstItem="kco-Ow-oOV" firstAttribute="top" secondItem="KGe-Ub-VLT" secondAttribute="top" id="a0U-19-uUt"/>
+                <constraint firstAttribute="bottom" secondItem="HPX-Lw-84i" secondAttribute="bottom" id="ado-GB-4MJ"/>
+                <constraint firstAttribute="trailing" secondItem="4lS-wg-ZMh" secondAttribute="trailing" id="bPj-dN-FHK"/>
+                <constraint firstAttribute="trailing" secondItem="HPX-Lw-84i" secondAttribute="trailing" constant="10" id="i9V-6H-kEa"/>
+                <constraint firstAttribute="trailing" secondItem="mMY-PA-hgd" secondAttribute="trailing" id="iHH-SB-oH9"/>
+                <constraint firstItem="kco-Ow-oOV" firstAttribute="top" secondItem="mMY-PA-hgd" secondAttribute="bottom" id="ok4-EA-J41"/>
+                <constraint firstItem="4lS-wg-ZMh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pXE-sa-LZm"/>
+                <constraint firstAttribute="trailing" secondItem="low-aw-XYf" secondAttribute="trailing" id="sKj-oU-goy"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="backgroundColorName" value="Primary"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="108" y="-287"/>
+        </view>
+    </objects>
+</document>
