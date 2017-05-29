@@ -8,15 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		F7167B701DEAFC9C00A90E85 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7167B6F1DEAFC9C00A90E85 /* Module.swift */; };
+		F71A0F231ED7E36A00D4D57D /* CollapsiblePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71A0F211ED7E36A00D4D57D /* CollapsiblePicker.swift */; };
+		F71A0F241ED7E36A00D4D57D /* CollapsiblePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71A0F221ED7E36A00D4D57D /* CollapsiblePicker.xib */; };
+		F71A0F271ED7E45F00D4D57D /* CollapsiblePickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71A0F251ED7E45F00D4D57D /* CollapsiblePickerTableViewCell.swift */; };
+		F71A0F281ED7E45F00D4D57D /* CollapsiblePickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71A0F261ED7E45F00D4D57D /* CollapsiblePickerTableViewCell.xib */; };
+		F73511851ED7B21900D82895 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73511841ED7B21900D82895 /* Colors.swift */; };
+		F73511871ED7B51700D82895 /* UIView+Inspectables.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73511861ED7B51700D82895 /* UIView+Inspectables.swift */; };
+		F735118E1ED7C03000D82895 /* SpelledCharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73511891ED7C03000D82895 /* SpelledCharacterTableViewCell.swift */; };
+		F735118F1ED7C03000D82895 /* SpelledCharacterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F735118A1ED7C03000D82895 /* SpelledCharacterTableViewCell.xib */; };
+		F73511901ED7C03000D82895 /* SpelledCharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735118C1ED7C03000D82895 /* SpelledCharacterViewModel.swift */; };
+		F73511911ED7C03000D82895 /* SpellingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735118D1ED7C03000D82895 /* SpellingViewModel.swift */; };
+		F73511931ED7C05600D82895 /* SpellingTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73511921ED7C05600D82895 /* SpellingTableViewManager.swift */; };
+		F74F5CAD1EDC34D2004114B9 /* PhraseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F5CAC1EDC34D2004114B9 /* PhraseTextField.swift */; };
 		F75B29631DF3BEFF00C6B8DB /* UIViewController+KeyboardManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B29621DF3BEFF00C6B8DB /* UIViewController+KeyboardManagement.swift */; };
 		F75B29651DF3CC0300C6B8DB /* UIView+ToggleAlpha.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B29641DF3CC0300C6B8DB /* UIView+ToggleAlpha.swift */; };
-		F75B296F1DF3D4C900C6B8DB /* SpelledCharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B29681DF3D4C900C6B8DB /* SpelledCharacterTableViewCell.swift */; };
-		F75B29701DF3D4C900C6B8DB /* SpelledCharacterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F75B29691DF3D4C900C6B8DB /* SpelledCharacterTableViewCell.xib */; };
-		F75B29711DF3D4C900C6B8DB /* SpelledCharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B296A1DF3D4C900C6B8DB /* SpelledCharacterViewModel.swift */; };
 		F75B29721DF3D4C900C6B8DB /* SpellingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B296B1DF3D4C900C6B8DB /* SpellingInteractor.swift */; };
 		F75B29731DF3D4C900C6B8DB /* SpellingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B296C1DF3D4C900C6B8DB /* SpellingRouter.swift */; };
 		F75B29741DF3D4C900C6B8DB /* SpellingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B296D1DF3D4C900C6B8DB /* SpellingView.swift */; };
-		F75B29751DF3D4C900C6B8DB /* SpellingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B296E1DF3D4C900C6B8DB /* SpellingViewModel.swift */; };
 		F768D1211DCF17B40084E2EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F768D1201DCF17B40084E2EA /* AppDelegate.swift */; };
 		F768D1261DCF17B40084E2EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F768D1241DCF17B40084E2EA /* Main.storyboard */; };
 		F768D1281DCF17B40084E2EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F768D1271DCF17B40084E2EA /* Assets.xcassets */; };
@@ -35,11 +43,10 @@
 		F7B534E41DF5879600BD317F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B534E21DF5879600BD317F /* MainInterface.storyboard */; };
 		F7B534E81DF5879600BD317F /* QuickSpell.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F7B534DE1DF5879600BD317F /* QuickSpell.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F7B534EE1DF6AA1900BD317F /* QuickSpell.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B534ED1DF6AA1900BD317F /* QuickSpell.xcassets */; };
-		F7B7A0841DF6C668003D9E61 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B7A0811DF6C668003D9E61 /* SettingsInteractor.swift */; };
-		F7B7A0851DF6C668003D9E61 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B7A0821DF6C668003D9E61 /* SettingsRouter.swift */; };
-		F7B7A0861DF6C668003D9E61 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B7A0831DF6C668003D9E61 /* SettingsView.swift */; };
 		F7C22CDB1DF29E5600517239 /* UITableView+ReuseIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C22CDA1DF29E5600517239 /* UITableView+ReuseIdentifiers.swift */; };
 		F7D74ED51DE6E9DE002C278D /* Speller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D74ED41DE6E9DE002C278D /* Speller.framework */; };
+		F7EC7D101EDBF5D80065350C /* DisclosureArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EC7D0F1EDBF5D80065350C /* DisclosureArrow.swift */; };
+		F7EC7D141EDC0B2B0065350C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EC7D131EDC0B2B0065350C /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,15 +89,23 @@
 
 /* Begin PBXFileReference section */
 		F7167B6F1DEAFC9C00A90E85 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		F71A0F211ED7E36A00D4D57D /* CollapsiblePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsiblePicker.swift; sourceTree = "<group>"; };
+		F71A0F221ED7E36A00D4D57D /* CollapsiblePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollapsiblePicker.xib; sourceTree = "<group>"; };
+		F71A0F251ED7E45F00D4D57D /* CollapsiblePickerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsiblePickerTableViewCell.swift; sourceTree = "<group>"; };
+		F71A0F261ED7E45F00D4D57D /* CollapsiblePickerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollapsiblePickerTableViewCell.xib; sourceTree = "<group>"; };
+		F73511841ED7B21900D82895 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		F73511861ED7B51700D82895 /* UIView+Inspectables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Inspectables.swift"; sourceTree = "<group>"; };
+		F73511891ED7C03000D82895 /* SpelledCharacterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpelledCharacterTableViewCell.swift; sourceTree = "<group>"; };
+		F735118A1ED7C03000D82895 /* SpelledCharacterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpelledCharacterTableViewCell.xib; sourceTree = "<group>"; };
+		F735118C1ED7C03000D82895 /* SpelledCharacterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpelledCharacterViewModel.swift; sourceTree = "<group>"; };
+		F735118D1ED7C03000D82895 /* SpellingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellingViewModel.swift; sourceTree = "<group>"; };
+		F73511921ED7C05600D82895 /* SpellingTableViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellingTableViewManager.swift; sourceTree = "<group>"; };
+		F74F5CAC1EDC34D2004114B9 /* PhraseTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhraseTextField.swift; sourceTree = "<group>"; };
 		F75B29621DF3BEFF00C6B8DB /* UIViewController+KeyboardManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+KeyboardManagement.swift"; sourceTree = "<group>"; };
 		F75B29641DF3CC0300C6B8DB /* UIView+ToggleAlpha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ToggleAlpha.swift"; sourceTree = "<group>"; };
-		F75B29681DF3D4C900C6B8DB /* SpelledCharacterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpelledCharacterTableViewCell.swift; sourceTree = "<group>"; };
-		F75B29691DF3D4C900C6B8DB /* SpelledCharacterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpelledCharacterTableViewCell.xib; sourceTree = "<group>"; };
-		F75B296A1DF3D4C900C6B8DB /* SpelledCharacterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpelledCharacterViewModel.swift; sourceTree = "<group>"; };
 		F75B296B1DF3D4C900C6B8DB /* SpellingInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellingInteractor.swift; sourceTree = "<group>"; };
 		F75B296C1DF3D4C900C6B8DB /* SpellingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellingRouter.swift; sourceTree = "<group>"; };
 		F75B296D1DF3D4C900C6B8DB /* SpellingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellingView.swift; sourceTree = "<group>"; };
-		F75B296E1DF3D4C900C6B8DB /* SpellingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellingViewModel.swift; sourceTree = "<group>"; };
 		F768D11D1DCF17B40084E2EA /* Bee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F768D1201DCF17B40084E2EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F768D1251DCF17B40084E2EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -125,11 +140,10 @@
 		F7B534E31DF5879600BD317F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		F7B534E51DF5879600BD317F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7B534ED1DF6AA1900BD317F /* QuickSpell.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = QuickSpell.xcassets; sourceTree = "<group>"; };
-		F7B7A0811DF6C668003D9E61 /* SettingsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
-		F7B7A0821DF6C668003D9E61 /* SettingsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
-		F7B7A0831DF6C668003D9E61 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F7C22CDA1DF29E5600517239 /* UITableView+ReuseIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+ReuseIdentifiers.swift"; sourceTree = "<group>"; };
 		F7D74ED41DE6E9DE002C278D /* Speller.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speller.framework; path = Carthage/Build/iOS/Speller.framework; sourceTree = "<group>"; };
+		F7EC7D0F1EDBF5D80065350C /* DisclosureArrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisclosureArrow.swift; sourceTree = "<group>"; };
+		F7EC7D131EDC0B2B0065350C /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,10 +187,51 @@
 			path = Architecture;
 			sourceTree = "<group>";
 		};
+		F71A0F201ED7E36A00D4D57D /* CollapsiblePicker */ = {
+			isa = PBXGroup;
+			children = (
+				F71A0F211ED7E36A00D4D57D /* CollapsiblePicker.swift */,
+				F71A0F221ED7E36A00D4D57D /* CollapsiblePicker.xib */,
+				F71A0F251ED7E45F00D4D57D /* CollapsiblePickerTableViewCell.swift */,
+				F71A0F261ED7E45F00D4D57D /* CollapsiblePickerTableViewCell.xib */,
+				F7EC7D0F1EDBF5D80065350C /* DisclosureArrow.swift */,
+				F7EC7D131EDC0B2B0065350C /* GradientView.swift */,
+			);
+			path = CollapsiblePicker;
+			sourceTree = "<group>";
+		};
+		F73511831ED7B20500D82895 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				F73511841ED7B21900D82895 /* Colors.swift */,
+				F73511861ED7B51700D82895 /* UIView+Inspectables.swift */,
+				F74F5CAC1EDC34D2004114B9 /* PhraseTextField.swift */,
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
+		F73511881ED7C03000D82895 /* SpellingTableView */ = {
+			isa = PBXGroup;
+			children = (
+				F73511921ED7C05600D82895 /* SpellingTableViewManager.swift */,
+				F73511891ED7C03000D82895 /* SpelledCharacterTableViewCell.swift */,
+				F735118A1ED7C03000D82895 /* SpelledCharacterTableViewCell.xib */,
+			);
+			path = SpellingTableView;
+			sourceTree = "<group>";
+		};
+		F735118B1ED7C03000D82895 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F735118C1ED7C03000D82895 /* SpelledCharacterViewModel.swift */,
+				F735118D1ED7C03000D82895 /* SpellingViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		F75B29661DF3D4C900C6B8DB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				F7B7A07A1DF6C023003D9E61 /* Settings */,
 				F75B29671DF3D4C900C6B8DB /* Spelling */,
 			);
 			path = Modules;
@@ -188,10 +243,9 @@
 				F75B296B1DF3D4C900C6B8DB /* SpellingInteractor.swift */,
 				F75B296C1DF3D4C900C6B8DB /* SpellingRouter.swift */,
 				F75B296D1DF3D4C900C6B8DB /* SpellingView.swift */,
-				F75B29681DF3D4C900C6B8DB /* SpelledCharacterTableViewCell.swift */,
-				F75B29691DF3D4C900C6B8DB /* SpelledCharacterTableViewCell.xib */,
-				F75B296A1DF3D4C900C6B8DB /* SpelledCharacterViewModel.swift */,
-				F75B296E1DF3D4C900C6B8DB /* SpellingViewModel.swift */,
+				F73511881ED7C03000D82895 /* SpellingTableView */,
+				F71A0F201ED7E36A00D4D57D /* CollapsiblePicker */,
+				F735118B1ED7C03000D82895 /* ViewModels */,
 			);
 			path = Spelling;
 			sourceTree = "<group>";
@@ -224,6 +278,7 @@
 			children = (
 				F768D1201DCF17B40084E2EA /* AppDelegate.swift */,
 				F75B29661DF3D4C900C6B8DB /* Modules */,
+				F73511831ED7B20500D82895 /* Appearance */,
 				F7167B6E1DEAF04500A90E85 /* Architecture */,
 				F7C22CD91DF29E3A00517239 /* Tools */,
 				F768D1241DCF17B40084E2EA /* Main.storyboard */,
@@ -288,16 +343,6 @@
 			path = QuickSpell;
 			sourceTree = "<group>";
 		};
-		F7B7A07A1DF6C023003D9E61 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				F7B7A0811DF6C668003D9E61 /* SettingsInteractor.swift */,
-				F7B7A0821DF6C668003D9E61 /* SettingsRouter.swift */,
-				F7B7A0831DF6C668003D9E61 /* SettingsView.swift */,
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
 		F7C22CD91DF29E3A00517239 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,7 +373,6 @@
 				F768D11B1DCF17B40084E2EA /* Resources */,
 				F7D74ED61DE6E9EE002C278D /* Carthage - Copy Frameworks */,
 				F7B534EC1DF5879600BD317F /* Embed App Extensions */,
-				F7B0174E1ED5228700B76CD2 /* Increment Build Number */,
 			);
 			buildRules = (
 			);
@@ -454,8 +498,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F768D12B1DCF17B40084E2EA /* LaunchScreen.storyboard in Resources */,
-				F75B29701DF3D4C900C6B8DB /* SpelledCharacterTableViewCell.xib in Resources */,
+				F735118F1ED7C03000D82895 /* SpelledCharacterTableViewCell.xib in Resources */,
+				F71A0F241ED7E36A00D4D57D /* CollapsiblePicker.xib in Resources */,
 				F768D1281DCF17B40084E2EA /* Assets.xcassets in Resources */,
+				F71A0F281ED7E45F00D4D57D /* CollapsiblePickerTableViewCell.xib in Resources */,
 				F768D1261DCF17B40084E2EA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,20 +532,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		F7B0174E1ED5228700B76CD2 /* Increment Build Number */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Increment Build Number";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#/usr/bin/agvtool next-version -all";
-		};
 		F7D74ED61DE6E9EE002C278D /* Carthage - Copy Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -522,20 +554,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F73511901ED7C03000D82895 /* SpelledCharacterViewModel.swift in Sources */,
+				F73511931ED7C05600D82895 /* SpellingTableViewManager.swift in Sources */,
+				F735118E1ED7C03000D82895 /* SpelledCharacterTableViewCell.swift in Sources */,
 				F75B29741DF3D4C900C6B8DB /* SpellingView.swift in Sources */,
 				F75B29731DF3D4C900C6B8DB /* SpellingRouter.swift in Sources */,
 				F768D1211DCF17B40084E2EA /* AppDelegate.swift in Sources */,
-				F75B29711DF3D4C900C6B8DB /* SpelledCharacterViewModel.swift in Sources */,
+				F7EC7D101EDBF5D80065350C /* DisclosureArrow.swift in Sources */,
 				F75B29631DF3BEFF00C6B8DB /* UIViewController+KeyboardManagement.swift in Sources */,
+				F7EC7D141EDC0B2B0065350C /* GradientView.swift in Sources */,
+				F74F5CAD1EDC34D2004114B9 /* PhraseTextField.swift in Sources */,
 				F75B29651DF3CC0300C6B8DB /* UIView+ToggleAlpha.swift in Sources */,
 				F75B29721DF3D4C900C6B8DB /* SpellingInteractor.swift in Sources */,
-				F7B7A0861DF6C668003D9E61 /* SettingsView.swift in Sources */,
+				F73511851ED7B21900D82895 /* Colors.swift in Sources */,
+				F71A0F271ED7E45F00D4D57D /* CollapsiblePickerTableViewCell.swift in Sources */,
 				F7167B701DEAFC9C00A90E85 /* Module.swift in Sources */,
-				F75B29751DF3D4C900C6B8DB /* SpellingViewModel.swift in Sources */,
 				F7C22CDB1DF29E5600517239 /* UITableView+ReuseIdentifiers.swift in Sources */,
-				F7B7A0851DF6C668003D9E61 /* SettingsRouter.swift in Sources */,
-				F75B296F1DF3D4C900C6B8DB /* SpelledCharacterTableViewCell.swift in Sources */,
-				F7B7A0841DF6C668003D9E61 /* SettingsInteractor.swift in Sources */,
+				F73511871ED7B51700D82895 /* UIView+Inspectables.swift in Sources */,
+				F73511911ED7C03000D82895 /* SpellingViewModel.swift in Sources */,
+				F71A0F231ED7E36A00D4D57D /* CollapsiblePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,7 +680,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 23;
+				CURRENT_PROJECT_VERSION = 31;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -695,7 +732,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 23;
+				CURRENT_PROJECT_VERSION = 31;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;

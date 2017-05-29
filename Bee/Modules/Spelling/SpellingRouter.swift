@@ -25,12 +25,4 @@ class SpellingRouter {
         return view
     }
 
-    func showSettings() {
-        let viewController = SettingsRouter.createModule { viewController in
-            viewController.dismiss(animated: true, completion: nil)
-        }
-
-        view.present(viewController, animated: true, completion: nil)
-    }
-
 }
