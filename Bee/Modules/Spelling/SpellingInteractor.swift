@@ -17,11 +17,11 @@ class SpellingInteractor {
         var alphabet: SpellingAlphabet
     }
     
-    var view: SpellingView
+    weak var view: SpellingView!
 
     var router: SpellingRouter
 
-    var completionHandler: ModuleCompletionHandler
+    var completionHandler: ModuleCompletionHandler?
 
     var spellingTableViewManager = SpellingTableViewManager()
     
@@ -48,14 +48,14 @@ class SpellingInteractor {
 
     var selectedAlphabet = SpellingAlphabet.InternationalRadiotelephony
 
-    init(view: SpellingView, router: SpellingRouter, completionHandler: @escaping ModuleCompletionHandler) {
+    init(view: SpellingView, router: SpellingRouter, completionHandler: ModuleCompletionHandler? = nil) {
         self.view = view
         self.router = router
         self.completionHandler = completionHandler
     }
 
     private func dismissModule() {
-        completionHandler(self.view)
+        completionHandler?(self.view)
     }
 
     // MARK: - User input
