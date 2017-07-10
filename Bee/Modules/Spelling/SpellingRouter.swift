@@ -10,13 +10,13 @@ import UIKit
 
 class SpellingRouter {
 
-    var view: SpellingView
+    weak var view: SpellingView!
 
     init(view: SpellingView) {
         self.view = view
     }
 
-    static func createModule(completionHandler: @escaping ModuleCompletionHandler) -> UIViewController {
+    static func createModule(completionHandler: ModuleCompletionHandler? = nil) -> UIViewController {
         let view = SpellingView.loadViewController() as! SpellingView
         let router = SpellingRouter(view: view)
         let interactor = SpellingInteractor(view: view, router: router, completionHandler: completionHandler)
