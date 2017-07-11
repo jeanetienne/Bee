@@ -1,5 +1,5 @@
 //
-//  SpellingInteractor.swift
+//  SpellingController.swift
 //  Bee
 //
 //  Created by Jean-Étienne on 27/11/16.
@@ -10,7 +10,7 @@ import UIKit
 
 import Speller
 
-class SpellingInteractor {
+class SpellingController {
 
     struct SpellingAlphabetDescription {
         var name: String

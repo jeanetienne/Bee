@@ -19,8 +19,8 @@ class SpellingRouter {
     static func createModule(completionHandler: ModuleCompletionHandler? = nil) -> UIViewController {
         let view = SpellingView.loadViewController() as! SpellingView
         let router = SpellingRouter(view: view)
-        let interactor = SpellingInteractor(view: view, router: router, completionHandler: completionHandler)
-        view.interactor = interactor
+        let controller = SpellingController(view: view, router: router, completionHandler: completionHandler)
+        view.controller = controller
 
         return view
     }

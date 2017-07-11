@@ -22,7 +22,7 @@
 		F74F5CAD1EDC34D2004114B9 /* PhraseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F5CAC1EDC34D2004114B9 /* PhraseTextField.swift */; };
 		F75B29631DF3BEFF00C6B8DB /* UIViewController+KeyboardManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B29621DF3BEFF00C6B8DB /* UIViewController+KeyboardManagement.swift */; };
 		F75B29651DF3CC0300C6B8DB /* UIView+ToggleAlpha.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B29641DF3CC0300C6B8DB /* UIView+ToggleAlpha.swift */; };
-		F75B29721DF3D4C900C6B8DB /* SpellingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B296B1DF3D4C900C6B8DB /* SpellingInteractor.swift */; };
+		F75B29721DF3D4C900C6B8DB /* SpellingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B296B1DF3D4C900C6B8DB /* SpellingController.swift */; };
 		F75B29731DF3D4C900C6B8DB /* SpellingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B296C1DF3D4C900C6B8DB /* SpellingRouter.swift */; };
 		F75B29741DF3D4C900C6B8DB /* SpellingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75B296D1DF3D4C900C6B8DB /* SpellingView.swift */; };
 		F768D1211DCF17B40084E2EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F768D1201DCF17B40084E2EA /* AppDelegate.swift */; };
@@ -103,7 +103,7 @@
 		F74F5CAC1EDC34D2004114B9 /* PhraseTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhraseTextField.swift; sourceTree = "<group>"; };
 		F75B29621DF3BEFF00C6B8DB /* UIViewController+KeyboardManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+KeyboardManagement.swift"; sourceTree = "<group>"; };
 		F75B29641DF3CC0300C6B8DB /* UIView+ToggleAlpha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ToggleAlpha.swift"; sourceTree = "<group>"; };
-		F75B296B1DF3D4C900C6B8DB /* SpellingInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellingInteractor.swift; sourceTree = "<group>"; };
+		F75B296B1DF3D4C900C6B8DB /* SpellingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellingController.swift; sourceTree = "<group>"; };
 		F75B296C1DF3D4C900C6B8DB /* SpellingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellingRouter.swift; sourceTree = "<group>"; };
 		F75B296D1DF3D4C900C6B8DB /* SpellingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellingView.swift; sourceTree = "<group>"; };
 		F768D11D1DCF17B40084E2EA /* Bee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bee.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -240,7 +240,7 @@
 		F75B29671DF3D4C900C6B8DB /* Spelling */ = {
 			isa = PBXGroup;
 			children = (
-				F75B296B1DF3D4C900C6B8DB /* SpellingInteractor.swift */,
+				F75B296B1DF3D4C900C6B8DB /* SpellingController.swift */,
 				F75B296C1DF3D4C900C6B8DB /* SpellingRouter.swift */,
 				F75B296D1DF3D4C900C6B8DB /* SpellingView.swift */,
 				F73511881ED7C03000D82895 /* SpellingTableView */,
@@ -569,7 +569,7 @@
 				F7EC7D141EDC0B2B0065350C /* GradientView.swift in Sources */,
 				F74F5CAD1EDC34D2004114B9 /* PhraseTextField.swift in Sources */,
 				F75B29651DF3CC0300C6B8DB /* UIView+ToggleAlpha.swift in Sources */,
-				F75B29721DF3D4C900C6B8DB /* SpellingInteractor.swift in Sources */,
+				F75B29721DF3D4C900C6B8DB /* SpellingController.swift in Sources */,
 				F73511851ED7B21900D82895 /* Colors.swift in Sources */,
 				F71A0F271ED7E45F00D4D57D /* CollapsiblePickerTableViewCell.swift in Sources */,
 				F7167B701DEAFC9C00A90E85 /* Module.swift in Sources */,

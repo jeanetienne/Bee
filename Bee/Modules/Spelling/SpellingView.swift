@@ -16,7 +16,7 @@ class SpellingView: UIViewController {
     
     @IBOutlet weak var spellingTableView: UITableView!
 
-    var interactor: SpellingInteractor!
+    var controller: SpellingController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,10 +34,10 @@ class SpellingView: UIViewController {
         }
 
         alphabetPicker.delegate = self
-        interactor.didLoadView()
+        controller.didLoadView()
     }
 
-    // MARK: - Interactor callbacks
+    // MARK: - Controller callbacks
     func setSpellingTableViewManager(manager: SpellingTableViewManager) {
         spellingTableView.dataSource = manager
         spellingTableView.delegate = manager
@@ -58,12 +58,12 @@ class SpellingView: UIViewController {
 extension SpellingView: UITextFieldDelegate {
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        interactor.didSelectSpell(phrase: textField.text)
+        controller.didSelectSpell(phrase: textField.text)
         return false
     }
 
     func textFieldShouldClear(_ textField: UITextField) -> Bool {
-        interactor.didSelectClear()
+        controller.didSelectClear()
         return true
     }
     
@@ -72,7 +72,7 @@ extension SpellingView: UITextFieldDelegate {
 extension SpellingView: CollapsiblePickerDelegate {
     
     func pickerDidSelectItem(withName name: String) {
-        interactor.didSelectAlphabet(withName: name, phrase: phraseTextField.text)
+        controller.didSelectAlphabet(withName: name, phrase: phraseTextField.text)
     }
     
 }
