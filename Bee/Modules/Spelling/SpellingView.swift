@@ -34,6 +34,11 @@ class SpellingView: UIViewController {
         controller.didLoadView()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        controller.didPresentView()
+    }
+
     // MARK: - Controller callbacks
     func setSpellingTableViewManager(manager: SpellingTableViewManager) {
         spellingTableView.dataSource = manager
@@ -48,6 +53,12 @@ class SpellingView: UIViewController {
     func updateSpelling(withNumberOfCharacters numberOfCharacters: Int) {
         spellingTableView.reloadData()
         phraseTextField.resignFirstResponder()
+    }
+
+    func deselectSpellingTableView() {
+        for rowNumber in 0..<spellingTableView.numberOfRows(inSection: 0) {
+            spellingTableView.deselectRow(at: IndexPath(row: rowNumber, section: 0), animated: true)
+        }
     }
 
 }

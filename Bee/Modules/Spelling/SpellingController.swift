@@ -67,6 +67,10 @@ class SpellingController {
         })
     }
 
+    func didPresentView() {
+        view.deselectSpellingTableView()
+    }
+
     func didSelectAlphabet(withName name: String, phrase: String?) {
         selectedAlphabet = alphabets.first(where: { spellingAlphabetDescription -> Bool in
             spellingAlphabetDescription.name == name
