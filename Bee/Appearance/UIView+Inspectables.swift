@@ -38,7 +38,7 @@ extension UIView {
     @IBInspectable public var borderWidth: CGFloat {
         
         get {
-            return self.layer.borderWidth
+            return layer.borderWidth
         }
         
         set(newWidth) {
@@ -50,7 +50,7 @@ extension UIView {
     @IBInspectable public var cornerRadius: CGFloat {
         
         get {
-            return self.layer.cornerRadius
+            return layer.cornerRadius
         }
         
         set(newRadius) {

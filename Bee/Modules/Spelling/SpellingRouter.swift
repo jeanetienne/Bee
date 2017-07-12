@@ -12,8 +12,8 @@ class SpellingRouter {
 
     weak var view: SpellingView!
 
-    init(view: SpellingView) {
-        self.view = view
+    init(view aView: SpellingView) {
+        view = aView
     }
 
     static func createModule(completionHandler: ModuleCompletionHandler? = nil) -> UIViewController {

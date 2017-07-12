@@ -11,6 +11,12 @@ import UIKit
 class SpellingTableViewManager: NSObject {
     
     var viewModel: SpellingViewModel?
+
+    let controller: SpellingController
+
+    init(controller aController: SpellingController) {
+        controller = aController
+    }
     
 }
 

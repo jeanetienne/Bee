@@ -60,7 +60,7 @@ class CollapsiblePicker: UIView {
         super.awakeFromNib()
         
         let view = loadFromNib()
-        view.frame = self.bounds
+        view.frame = bounds
         addSubview(view)
         
         heightConstraint = initialHeightConstraint()
@@ -82,7 +82,7 @@ class CollapsiblePicker: UIView {
         topGradient.alpha = 0
         bottomGradient.alpha = 0
         
-        self.clipsToBounds = true
+        clipsToBounds = true
     }
     
     func selectItem(atIndex index: Int) {

@@ -23,7 +23,7 @@ class SpellingController {
 
     var completionHandler: ModuleCompletionHandler?
 
-    var spellingTableViewManager = SpellingTableViewManager()
+    var spellingTableViewManager: SpellingTableViewManager
     
     let alphabets: [SpellingAlphabetDescription] = [
         SpellingAlphabetDescription(name: "International Radiotelephony", alphabet: .InternationalRadiotelephony),
@@ -48,14 +48,15 @@ class SpellingController {
 
     var selectedAlphabet = SpellingAlphabet.InternationalRadiotelephony
 
-    init(view: SpellingView, router: SpellingRouter, completionHandler: ModuleCompletionHandler? = nil) {
-        self.view = view
-        self.router = router
-        self.completionHandler = completionHandler
+    init(view aView: SpellingView, router aRouter: SpellingRouter, completionHandler aCompletionHandler: ModuleCompletionHandler? = nil) {
+        view = aView
+        router = aRouter
+        completionHandler = aCompletionHandler
+        spellingTableViewManager = SpellingTableViewManager(controller: self)
     }
 
     private func dismissModule() {
-        completionHandler?(self.view)
+        completionHandler?(view)
     }
 
     // MARK: - User input
