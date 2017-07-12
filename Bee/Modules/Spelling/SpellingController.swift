@@ -98,3 +98,29 @@ class SpellingController {
     }
 
 }
+
+extension SpelledCharacter {
+
+    var letter: String {
+        switch self {
+        case .Match(let character, _):
+            return character
+        case .Description(let character, _):
+            return character
+        case .Unknown(let character):
+            return character
+        }
+    }
+
+    var description: String? {
+        switch self {
+        case .Match(_, let codeWordCollection):
+            return codeWordCollection.mainCodeWord
+        case .Description(_, let description):
+            return description
+        case .Unknown(_):
+            return nil
+        }
+    }
+
+}
