@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window = UIWindow(frame: UIScreen.main.bounds)
         if let appWindow = window {
-            let firstModule = SpellingRouter.createModule()
+            let firstModule = SpellingRouter.entryPoint()
             appWindow.rootViewController = firstModule
             appWindow.makeKeyAndVisible()
         }

@@ -13,7 +13,7 @@ class SpellingRouter {
         view = aView
     }
 
-    static func createModule(completionHandler: ModuleCompletionHandler? = nil) -> UIViewController {
+    static func entryPoint(completionHandler: ModuleCompletionHandler? = nil) -> UIViewController {
         let view = SpellingView.loadFromStoryboard() as! SpellingView
         let router = SpellingRouter(view: view)
         let controller = SpellingController(view: view, router: router, completionHandler: completionHandler)
