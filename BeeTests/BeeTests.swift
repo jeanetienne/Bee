@@ -1,9 +1,6 @@
 //
-//  BeeTests.swift
-//  BeeTests
-//
-//  Created by Jean-Étienne on 6/11/16.
-//  Copyright © 2016 Jean-Étienne. All rights reserved.
+// Bee
+// Copyright © 2017 Jean-Étienne. All rights reserved.
 //
 
 import XCTest
@@ -28,7 +25,7 @@ class BeeTests: XCTestCase {
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }

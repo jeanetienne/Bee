@@ -1,9 +1,6 @@
 //
-//  GradientView.swift
-//  Bee
-//
-//  Created by Jean-Étienne on 29/5/17.
-//  Copyright © 2017 Jean-Étienne. All rights reserved.
+// Bee
+// Copyright © 2017 Jean-Étienne. All rights reserved.
 //
 
 import UIKit
@@ -15,7 +12,7 @@ class GradientView: UIView {
     
     override func layoutSubviews() {
         let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = self.bounds
+        gradientLayer.frame = bounds
         gradientLayer.colors = [UIColor.primary.cgColor, UIColor.primary.withAlphaComponent(0).cgColor]
         gradientLayer.locations = [0.0, 0.5]
         

@@ -1,9 +1,6 @@
 //
-//  UIView+Inspectables.swift
-//  Bee
-//
-//  Created by Jean-Étienne on 24/5/17.
-//  Copyright © 2017 Jean-Étienne. All rights reserved.
+// Bee
+// Copyright © 2017 Jean-Étienne. All rights reserved.
 //
 
 import UIKit
@@ -38,7 +35,7 @@ extension UIView {
     @IBInspectable public var borderWidth: CGFloat {
         
         get {
-            return self.layer.borderWidth
+            return layer.borderWidth
         }
         
         set(newWidth) {
@@ -50,7 +47,7 @@ extension UIView {
     @IBInspectable public var cornerRadius: CGFloat {
         
         get {
-            return self.layer.cornerRadius
+            return layer.cornerRadius
         }
         
         set(newRadius) {

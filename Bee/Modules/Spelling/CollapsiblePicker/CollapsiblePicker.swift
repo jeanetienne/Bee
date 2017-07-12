@@ -1,9 +1,6 @@
 //
-//  CollapsiblePicker.swift
-//  Bee
-//
-//  Created by Jean-Étienne on 26/5/17.
-//  Copyright © 2017 Jean-Étienne. All rights reserved.
+// Bee
+// Copyright © 2017 Jean-Étienne. All rights reserved.
 //
 
 import UIKit
@@ -60,7 +57,7 @@ class CollapsiblePicker: UIView {
         super.awakeFromNib()
         
         let view = loadFromNib()
-        view.frame = self.bounds
+        view.frame = bounds
         addSubview(view)
         
         heightConstraint = initialHeightConstraint()
@@ -82,7 +79,7 @@ class CollapsiblePicker: UIView {
         topGradient.alpha = 0
         bottomGradient.alpha = 0
         
-        self.clipsToBounds = true
+        clipsToBounds = true
     }
     
     func selectItem(atIndex index: Int) {

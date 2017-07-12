@@ -1,5 +1,6 @@
 //
-//  Copyright © 2016 Jean-Étienne. All rights reserved.
+// Bee
+// Copyright © 2017 Jean-Étienne. All rights reserved.
 //
 
 import UIKit
@@ -8,9 +9,10 @@ typealias ModuleCompletionHandler = (UIViewController) -> ()
 
 extension UIViewController {
 
-    static func loadViewController() -> UIViewController {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        return storyboard.instantiateViewController(withIdentifier: String(describing: self))
+    static func loadFromStoryboard(withName storyboardName: String = "Main", identifier: String? = nil) -> UIViewController {
+        let viewIdentifier = (identifier == nil) ? String(describing: self) : identifier!
+        let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
+        return storyboard.instantiateViewController(withIdentifier: viewIdentifier)
     }
 
 }

@@ -1,9 +1,6 @@
 //
-//  SpellingViewController.swift
-//  Bee
-//
-//  Created by Jean-Étienne on 6/11/16.
-//  Copyright © 2016 Jean-Étienne. All rights reserved.
+// Bee
+// Copyright © 2017 Jean-Étienne. All rights reserved.
 //
 
 import UIKit
@@ -16,7 +13,7 @@ class SpellingView: UIViewController {
     
     @IBOutlet weak var spellingTableView: UITableView!
 
-    var interactor: SpellingInteractor!
+    var controller: SpellingController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,10 +31,15 @@ class SpellingView: UIViewController {
         }
 
         alphabetPicker.delegate = self
-        interactor.didLoadView()
+        controller.didLoadView()
     }
 
-    // MARK: - Interactor callbacks
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        controller.didPresentView()
+    }
+
+    // MARK: - Controller callbacks
     func setSpellingTableViewManager(manager: SpellingTableViewManager) {
         spellingTableView.dataSource = manager
         spellingTableView.delegate = manager
@@ -53,17 +55,23 @@ class SpellingView: UIViewController {
         phraseTextField.resignFirstResponder()
     }
 
+    func deselectSpellingTableView() {
+        for rowNumber in 0..<spellingTableView.numberOfRows(inSection: 0) {
+            spellingTableView.deselectRow(at: IndexPath(row: rowNumber, section: 0), animated: true)
+        }
+    }
+
 }
 
 extension SpellingView: UITextFieldDelegate {
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        interactor.didSelectSpell(phrase: textField.text)
+        controller.didSelectSpell(phrase: textField.text)
         return false
     }
 
     func textFieldShouldClear(_ textField: UITextField) -> Bool {
-        interactor.didSelectClear()
+        controller.didSelectClear()
         return true
     }
     
@@ -72,7 +80,7 @@ extension SpellingView: UITextFieldDelegate {
 extension SpellingView: CollapsiblePickerDelegate {
     
     func pickerDidSelectItem(withName name: String) {
-        interactor.didSelectAlphabet(withName: name, phrase: phraseTextField.text)
+        controller.didSelectAlphabet(withName: name, phrase: phraseTextField.text)
     }
     
 }

@@ -1,16 +1,13 @@
 //
-//  SpellingInteractor.swift
-//  Bee
-//
-//  Created by Jean-Étienne on 27/11/16.
-//  Copyright © 2016 Jean-Étienne. All rights reserved.
+// Bee
+// Copyright © 2017 Jean-Étienne. All rights reserved.
 //
 
 import UIKit
 
 import Speller
 
-class SpellingInteractor {
+class SpellingController {
 
     struct SpellingAlphabetDescription {
         var name: String
@@ -23,7 +20,9 @@ class SpellingInteractor {
 
     var completionHandler: ModuleCompletionHandler?
 
-    var spellingTableViewManager = SpellingTableViewManager()
+    lazy var spellingTableViewManager: SpellingTableViewManager = {
+        return SpellingTableViewManager(controller: self)
+    }()
     
     let alphabets: [SpellingAlphabetDescription] = [
         SpellingAlphabetDescription(name: "International Radiotelephony", alphabet: .InternationalRadiotelephony),
@@ -48,14 +47,16 @@ class SpellingInteractor {
 
     var selectedAlphabet = SpellingAlphabet.InternationalRadiotelephony
 
-    init(view: SpellingView, router: SpellingRouter, completionHandler: ModuleCompletionHandler? = nil) {
-        self.view = view
-        self.router = router
-        self.completionHandler = completionHandler
+    var currentSpelling: [SpelledCharacter] = []
+
+    init(view aView: SpellingView, router aRouter: SpellingRouter, completionHandler aCompletionHandler: ModuleCompletionHandler? = nil) {
+        view = aView
+        router = aRouter
+        completionHandler = aCompletionHandler
     }
 
     private func dismissModule() {
-        completionHandler?(self.view)
+        completionHandler?(view)
     }
 
     // MARK: - User input
@@ -64,6 +65,10 @@ class SpellingInteractor {
         view.updateAlphabets(alphabets.map { spellingAlphabetDescription -> String in
             return spellingAlphabetDescription.name
         })
+    }
+
+    func didPresentView() {
+        view.deselectSpellingTableView()
     }
 
     func didSelectAlphabet(withName name: String, phrase: String?) {
@@ -89,11 +94,37 @@ class SpellingInteractor {
 
     // MARK: - Private helpers
     func spell(phrase: String, withSpellingAlphabet alphabet: SpellingAlphabet) {
-        let spelling = Speller.spell(phrase: phrase, withSpellingAlphabet: alphabet)
-        let spellingViewModel = SpellingViewModel(withSpelling: spelling)
-        
+        currentSpelling = Speller.spell(phrase: phrase, withSpellingAlphabet: alphabet)
+        let spellingViewModel = SpellingViewModel(withSpelling: currentSpelling)
+
         spellingTableViewManager.viewModel = spellingViewModel
         view.updateSpelling(withNumberOfCharacters: spellingViewModel.numberOfSpelledCharacters)
+    }
+
+}
+
+extension SpelledCharacter {
+
+    var letter: String {
+        switch self {
+        case .Match(let character, _):
+            return character
+        case .Description(let character, _):
+            return character
+        case .Unknown(let character):
+            return character
+        }
+    }
+
+    var description: String? {
+        switch self {
+        case .Match(_, let codeWordCollection):
+            return codeWordCollection.mainCodeWord
+        case .Description(_, let description):
+            return description
+        case .Unknown(_):
+            return nil
+        }
     }
 
 }

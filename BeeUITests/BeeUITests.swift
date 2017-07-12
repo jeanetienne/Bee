@@ -1,9 +1,6 @@
 //
-//  BeeUITests.swift
-//  BeeUITests
-//
-//  Created by Jean-Étienne on 6/11/16.
-//  Copyright © 2016 Jean-Étienne. All rights reserved.
+// Bee
+// Copyright © 2017 Jean-Étienne. All rights reserved.
 //
 
 import XCTest
