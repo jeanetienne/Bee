@@ -19,6 +19,10 @@ class SpellingTableViewManager: NSObject {
 
 extension SpellingTableViewManager: UITableViewDataSource {
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel?.numberOfSpelledCharacters ?? 0
+    }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withClass: SpelledCharacterTableViewCell.self,
                                                  for: indexPath) as! SpelledCharacterTableViewCell
@@ -27,10 +31,6 @@ extension SpellingTableViewManager: UITableViewDataSource {
         }
         
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel?.numberOfSpelledCharacters ?? 0
     }
     
 }
