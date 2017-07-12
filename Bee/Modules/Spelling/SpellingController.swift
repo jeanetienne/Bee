@@ -20,7 +20,9 @@ class SpellingController {
 
     var completionHandler: ModuleCompletionHandler?
 
-    var spellingTableViewManager: SpellingTableViewManager
+    lazy var spellingTableViewManager: SpellingTableViewManager = {
+        return SpellingTableViewManager(controller: self)
+    }()
     
     let alphabets: [SpellingAlphabetDescription] = [
         SpellingAlphabetDescription(name: "International Radiotelephony", alphabet: .InternationalRadiotelephony),
@@ -45,11 +47,12 @@ class SpellingController {
 
     var selectedAlphabet = SpellingAlphabet.InternationalRadiotelephony
 
+    var currentSpelling: [SpelledCharacter] = []
+
     init(view aView: SpellingView, router aRouter: SpellingRouter, completionHandler aCompletionHandler: ModuleCompletionHandler? = nil) {
         view = aView
         router = aRouter
         completionHandler = aCompletionHandler
-        spellingTableViewManager = SpellingTableViewManager(controller: self)
     }
 
     private func dismissModule() {
@@ -87,9 +90,9 @@ class SpellingController {
 
     // MARK: - Private helpers
     func spell(phrase: String, withSpellingAlphabet alphabet: SpellingAlphabet) {
-        let spelling = Speller.spell(phrase: phrase, withSpellingAlphabet: alphabet)
-        let spellingViewModel = SpellingViewModel(withSpelling: spelling)
-        
+        currentSpelling = Speller.spell(phrase: phrase, withSpellingAlphabet: alphabet)
+        let spellingViewModel = SpellingViewModel(withSpelling: currentSpelling)
+
         spellingTableViewManager.viewModel = spellingViewModel
         view.updateSpelling(withNumberOfCharacters: spellingViewModel.numberOfSpelledCharacters)
     }
