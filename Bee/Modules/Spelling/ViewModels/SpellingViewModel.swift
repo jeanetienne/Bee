@@ -1,9 +1,6 @@
 //
-//  SpellingViewModel.swift
-//  Bee
-//
-//  Created by Jean-Étienne on 3/12/16.
-//  Copyright © 2016 Jean-Étienne. All rights reserved.
+// Bee
+// Copyright © 2017 Jean-Étienne. All rights reserved.
 //
 
 import Foundation

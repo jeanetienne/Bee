@@ -1,9 +1,6 @@
 //
-//  CollapsiblePicker.swift
-//  Bee
-//
-//  Created by Jean-Étienne on 26/5/17.
-//  Copyright © 2017 Jean-Étienne. All rights reserved.
+// Bee
+// Copyright © 2017 Jean-Étienne. All rights reserved.
 //
 
 import UIKit
