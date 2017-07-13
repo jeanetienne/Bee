@@ -115,19 +115,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More awesome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLa-oX-Y2C">
-                                <rect key="frame" x="36" y="131" width="200" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="YDd-Lm-ebc"/>
-                                </constraints>
+                                <rect key="frame" x="36" y="131" width="234" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Less boring" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jyA-Bo-MXV">
-                                <rect key="frame" x="36" y="192" width="200" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="TeV-qD-aux"/>
-                                </constraints>
+                                <rect key="frame" x="36" y="192" width="234" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -148,6 +142,7 @@
                             <constraint firstItem="GAN-kU-THc" firstAttribute="leading" secondItem="CUV-Ri-E36" secondAttribute="leadingMargin" constant="20" id="Ult-sH-ZeE"/>
                             <constraint firstItem="GAN-kU-THc" firstAttribute="top" secondItem="9Sr-nT-m0M" secondAttribute="bottom" constant="20" id="aBW-LJ-oL5"/>
                             <constraint firstItem="BLa-oX-Y2C" firstAttribute="top" secondItem="GAN-kU-THc" secondAttribute="bottom" constant="70" id="bLa-M7-XtP"/>
+                            <constraint firstItem="t9d-K6-Q9C" firstAttribute="leading" secondItem="jyA-Bo-MXV" secondAttribute="trailing" constant="20" id="bxZ-z9-1Zp"/>
                             <constraint firstItem="1Ad-41-RU2" firstAttribute="centerY" secondItem="BLa-oX-Y2C" secondAttribute="centerY" id="epj-Zb-li6"/>
                             <constraint firstItem="QwD-lL-EDk" firstAttribute="top" secondItem="pL0-s7-Un9" secondAttribute="bottom" constant="20" id="h3U-Np-Rj3"/>
                             <constraint firstItem="pL0-s7-Un9" firstAttribute="leading" secondItem="CUV-Ri-E36" secondAttribute="leadingMargin" constant="20" id="hoj-FE-69v"/>
@@ -155,6 +150,7 @@
                             <constraint firstItem="t9d-K6-Q9C" firstAttribute="centerY" secondItem="jyA-Bo-MXV" secondAttribute="centerY" id="qpk-E0-gRL"/>
                             <constraint firstItem="jyA-Bo-MXV" firstAttribute="leading" secondItem="CUV-Ri-E36" secondAttribute="leadingMargin" constant="20" id="r8v-9Z-wu1"/>
                             <constraint firstItem="BLa-oX-Y2C" firstAttribute="leading" secondItem="CUV-Ri-E36" secondAttribute="leadingMargin" constant="20" id="sXf-45-Zzq"/>
+                            <constraint firstItem="1Ad-41-RU2" firstAttribute="leading" secondItem="BLa-oX-Y2C" secondAttribute="trailing" constant="20" id="y4f-Tm-gTK"/>
                         </constraints>
                     </view>
                 </viewController>
