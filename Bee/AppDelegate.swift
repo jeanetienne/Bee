@@ -18,7 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         if let appWindow = window {
             let firstModule = SpellingRouter.entryPoint()
-            appWindow.rootViewController = firstModule
+            let navigationController = UINavigationController(rootViewController: firstModule)
+            navigationController.setNavigationBarHidden(true, animated: false)
+            appWindow.rootViewController = navigationController
             appWindow.makeKeyAndVisible()
         }
 
