@@ -39,6 +39,10 @@
 		F78435B41ED51C640044A9C1 /* SDStatusBarOverriderPost9_0.m in Sources */ = {isa = PBXBuildFile; fileRef = F78435AB1ED51C640044A9C1 /* SDStatusBarOverriderPost9_0.m */; };
 		F78435B51ED51C640044A9C1 /* SDStatusBarOverriderPost9_3.m in Sources */ = {isa = PBXBuildFile; fileRef = F78435AD1ED51C640044A9C1 /* SDStatusBarOverriderPost9_3.m */; };
 		F78435B61ED51C640044A9C1 /* SDStatusBarOverriderPre8_3.m in Sources */ = {isa = PBXBuildFile; fileRef = F78435AF1ED51C640044A9C1 /* SDStatusBarOverriderPre8_3.m */; };
+		F7A043DE1F16F78400C12DE7 /* LetterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A043DA1F16F78400C12DE7 /* LetterController.swift */; };
+		F7A043DF1F16F78400C12DE7 /* LetterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A043DB1F16F78400C12DE7 /* LetterRouter.swift */; };
+		F7A043E01F16F78400C12DE7 /* LetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A043DC1F16F78400C12DE7 /* LetterView.swift */; };
+		F7A043E11F16F78400C12DE7 /* LetterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7A043DD1F16F78400C12DE7 /* LetterView.xib */; };
 		F7B534E11DF5879600BD317F /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B534E01DF5879600BD317F /* ActionViewController.swift */; };
 		F7B534E41DF5879600BD317F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B534E21DF5879600BD317F /* MainInterface.storyboard */; };
 		F7B534E81DF5879600BD317F /* QuickSpell.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F7B534DE1DF5879600BD317F /* QuickSpell.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -135,6 +139,11 @@
 		F78435AE1ED51C640044A9C1 /* SDStatusBarOverriderPre8_3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDStatusBarOverriderPre8_3.h; sourceTree = "<group>"; };
 		F78435AF1ED51C640044A9C1 /* SDStatusBarOverriderPre8_3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDStatusBarOverriderPre8_3.m; sourceTree = "<group>"; };
 		F78435B71ED51C790044A9C1 /* BeeUITestsBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeeUITestsBridgingHeader.h; sourceTree = "<group>"; };
+		F7A043DA1F16F78400C12DE7 /* LetterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterController.swift; sourceTree = "<group>"; };
+		F7A043DB1F16F78400C12DE7 /* LetterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterRouter.swift; sourceTree = "<group>"; };
+		F7A043DC1F16F78400C12DE7 /* LetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterView.swift; sourceTree = "<group>"; };
+		F7A043DD1F16F78400C12DE7 /* LetterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LetterView.xib; sourceTree = "<group>"; };
+		F7A043E21F16F8F600C12DE7 /* guides.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = guides.md; path = ../../Desktop/guides.md; sourceTree = "<group>"; };
 		F7B534DE1DF5879600BD317F /* QuickSpell.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QuickSpell.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B534E01DF5879600BD317F /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		F7B534E31DF5879600BD317F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
@@ -232,6 +241,7 @@
 		F75B29661DF3D4C900C6B8DB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F7A043D91F16F73200C12DE7 /* Letter */,
 				F75B29671DF3D4C900C6B8DB /* Spelling */,
 			);
 			path = Modules;
@@ -332,6 +342,17 @@
 			path = SDStatusBarManager;
 			sourceTree = "<group>";
 		};
+		F7A043D91F16F73200C12DE7 /* Letter */ = {
+			isa = PBXGroup;
+			children = (
+				F7A043DA1F16F78400C12DE7 /* LetterController.swift */,
+				F7A043DB1F16F78400C12DE7 /* LetterRouter.swift */,
+				F7A043DC1F16F78400C12DE7 /* LetterView.swift */,
+				F7A043DD1F16F78400C12DE7 /* LetterView.xib */,
+			);
+			path = Letter;
+			sourceTree = "<group>";
+		};
 		F7B534DF1DF5879600BD317F /* QuickSpell */ = {
 			isa = PBXGroup;
 			children = (
@@ -356,6 +377,7 @@
 		F7D74ED31DE6E9DE002C278D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F7A043E21F16F8F600C12DE7 /* guides.md */,
 				F7D74ED41DE6E9DE002C278D /* Speller.framework */,
 			);
 			name = Frameworks;
@@ -502,6 +524,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F768D12B1DCF17B40084E2EA /* LaunchScreen.storyboard in Resources */,
+				F7A043E11F16F78400C12DE7 /* LetterView.xib in Resources */,
 				F735118F1ED7C03000D82895 /* SpelledCharacterTableViewCell.xib in Resources */,
 				F71A0F241ED7E36A00D4D57D /* CollapsiblePicker.xib in Resources */,
 				F768D1281DCF17B40084E2EA /* Assets.xcassets in Resources */,
@@ -571,11 +594,14 @@
 				F75B29651DF3CC0300C6B8DB /* UIView+ToggleAlpha.swift in Sources */,
 				F75B29721DF3D4C900C6B8DB /* SpellingController.swift in Sources */,
 				F73511851ED7B21900D82895 /* Colors.swift in Sources */,
+				F7A043DF1F16F78400C12DE7 /* LetterRouter.swift in Sources */,
+				F7A043DE1F16F78400C12DE7 /* LetterController.swift in Sources */,
 				F71A0F271ED7E45F00D4D57D /* CollapsiblePickerTableViewCell.swift in Sources */,
 				F7167B701DEAFC9C00A90E85 /* Module.swift in Sources */,
 				F7C22CDB1DF29E5600517239 /* UITableView+ReuseIdentifiers.swift in Sources */,
 				F73511871ED7B51700D82895 /* UIView+Inspectables.swift in Sources */,
 				F73511911ED7C03000D82895 /* SpellingViewModel.swift in Sources */,
+				F7A043E01F16F78400C12DE7 /* LetterView.swift in Sources */,
 				F71A0F231ED7E36A00D4D57D /* CollapsiblePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

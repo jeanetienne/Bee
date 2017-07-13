@@ -22,4 +22,15 @@ class SpellingRouter {
         return view
     }
 
+    func presentLetter(letter: String, description: String?) {
+        guard let navigationController = view.navigationController else {
+            return
+        }
+
+        let letterModule = LetterRouter.entryPoint(letter: letter, description: description) { letterView in
+            navigationController.popViewController(animated: true)
+        }
+        navigationController.pushViewController(letterModule, animated: true)
+    }
+
 }

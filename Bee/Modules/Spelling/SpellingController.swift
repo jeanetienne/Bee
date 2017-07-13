@@ -92,6 +92,12 @@ class SpellingController {
         view.updateSpelling(withNumberOfCharacters: 0)
     }
 
+    func didSelectLetter(atIndex index: Int) {
+        let spelledCharacter = currentSpelling[index]
+        router.presentLetter(letter: spelledCharacter.letter,
+                             description: spelledCharacter.description)
+    }
+
     // MARK: - Private helpers
     func spell(phrase: String, withSpellingAlphabet alphabet: SpellingAlphabet) {
         currentSpelling = Speller.spell(phrase: phrase, withSpellingAlphabet: alphabet)

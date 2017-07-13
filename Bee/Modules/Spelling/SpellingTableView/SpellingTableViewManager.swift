@@ -36,5 +36,9 @@ extension SpellingTableViewManager: UITableViewDataSource {
 }
 
 extension SpellingTableViewManager: UITableViewDelegate {
-    
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        controller.didSelectLetter(atIndex: indexPath.row)
+    }
+
 }
