@@ -18,8 +18,6 @@ class SpellingController {
 
     var router: SpellingRouter
 
-    var completionHandler: ModuleCompletionHandler?
-
     lazy var spellingTableViewManager: SpellingTableViewManager = {
         return SpellingTableViewManager(controller: self)
     }()
@@ -52,11 +50,6 @@ class SpellingController {
     init(view aView: SpellingView, router aRouter: SpellingRouter, completionHandler aCompletionHandler: ModuleCompletionHandler? = nil) {
         view = aView
         router = aRouter
-        completionHandler = aCompletionHandler
-    }
-
-    private func dismissModule() {
-        completionHandler?(view)
     }
 
     // MARK: - User input
