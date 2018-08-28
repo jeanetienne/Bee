@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14269.14" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -13,7 +13,6 @@
             <connections>
                 <outlet property="arrow" destination="low-aw-XYf" id="e3b-SX-CVd"/>
                 <outlet property="bottomGradient" destination="HPX-Lw-84i" id="oig-g6-Hk2"/>
-                <outlet property="bottomLine" destination="4lS-wg-ZMh" id="og0-sI-EKb"/>
                 <outlet property="pickerButton" destination="mMY-PA-hgd" id="9uP-Kw-NU9"/>
                 <outlet property="tableView" destination="kco-Ow-oOV" id="dHy-hD-z5R"/>
                 <outlet property="topGradient" destination="KGe-Ub-VLT" id="zaC-Jv-fNk"/>
@@ -36,7 +35,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="26" id="rta-6U-y2K"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                     <state key="normal" title="Button">
                         <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -51,16 +50,6 @@
                         <userDefinedRuntimeAttribute type="string" keyPath="backgroundColorName" value="Primary"/>
                     </userDefinedRuntimeAttributes>
                 </tableView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4lS-wg-ZMh" userLabel="Bottom Line">
-                    <rect key="frame" x="0.0" y="24" width="432" height="1"/>
-                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="0.5" id="n3U-d9-nQf"/>
-                    </constraints>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="backgroundColorName" value="Faded"/>
-                    </userDefinedRuntimeAttributes>
-                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPX-Lw-84i" userLabel="Bottom Gradient" customClass="GradientView" customModule="Bee" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="211" width="422" height="6"/>
                     <constraints>
@@ -78,7 +67,6 @@
                 </view>
             </subviews>
             <constraints>
-                <constraint firstItem="4lS-wg-ZMh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="2O3-zd-KIt"/>
                 <constraint firstItem="KGe-Ub-VLT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8JP-Ul-7HL"/>
                 <constraint firstAttribute="trailing" secondItem="KGe-Ub-VLT" secondAttribute="trailing" constant="10" id="JoM-J8-Wix"/>
                 <constraint firstItem="low-aw-XYf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="11" id="LQM-Xc-Lum"/>
@@ -90,11 +78,9 @@
                 <constraint firstAttribute="trailing" secondItem="kco-Ow-oOV" secondAttribute="trailing" id="WGx-03-ILp"/>
                 <constraint firstItem="kco-Ow-oOV" firstAttribute="top" secondItem="KGe-Ub-VLT" secondAttribute="top" id="a0U-19-uUt"/>
                 <constraint firstAttribute="bottom" secondItem="HPX-Lw-84i" secondAttribute="bottom" id="ado-GB-4MJ"/>
-                <constraint firstAttribute="trailing" secondItem="4lS-wg-ZMh" secondAttribute="trailing" id="bPj-dN-FHK"/>
                 <constraint firstAttribute="trailing" secondItem="HPX-Lw-84i" secondAttribute="trailing" constant="10" id="i9V-6H-kEa"/>
                 <constraint firstAttribute="trailing" secondItem="mMY-PA-hgd" secondAttribute="trailing" id="iHH-SB-oH9"/>
                 <constraint firstItem="kco-Ow-oOV" firstAttribute="top" secondItem="mMY-PA-hgd" secondAttribute="bottom" id="ok4-EA-J41"/>
-                <constraint firstItem="4lS-wg-ZMh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pXE-sa-LZm"/>
                 <constraint firstAttribute="trailing" secondItem="low-aw-XYf" secondAttribute="trailing" id="sKj-oU-goy"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
