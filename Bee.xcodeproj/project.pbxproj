@@ -39,10 +39,6 @@
 		F78435B41ED51C640044A9C1 /* SDStatusBarOverriderPost9_0.m in Sources */ = {isa = PBXBuildFile; fileRef = F78435AB1ED51C640044A9C1 /* SDStatusBarOverriderPost9_0.m */; };
 		F78435B51ED51C640044A9C1 /* SDStatusBarOverriderPost9_3.m in Sources */ = {isa = PBXBuildFile; fileRef = F78435AD1ED51C640044A9C1 /* SDStatusBarOverriderPost9_3.m */; };
 		F78435B61ED51C640044A9C1 /* SDStatusBarOverriderPre8_3.m in Sources */ = {isa = PBXBuildFile; fileRef = F78435AF1ED51C640044A9C1 /* SDStatusBarOverriderPre8_3.m */; };
-		F7B534E11DF5879600BD317F /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B534E01DF5879600BD317F /* ActionViewController.swift */; };
-		F7B534E41DF5879600BD317F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B534E21DF5879600BD317F /* MainInterface.storyboard */; };
-		F7B534E81DF5879600BD317F /* QuickSpell.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F7B534DE1DF5879600BD317F /* QuickSpell.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F7B534EE1DF6AA1900BD317F /* QuickSpell.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B534ED1DF6AA1900BD317F /* QuickSpell.xcassets */; };
 		F7C22CDB1DF29E5600517239 /* UITableView+ReuseIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C22CDA1DF29E5600517239 /* UITableView+ReuseIdentifiers.swift */; };
 		F7D74ED51DE6E9DE002C278D /* Speller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D74ED41DE6E9DE002C278D /* Speller.framework */; };
 		F7EC7D101EDBF5D80065350C /* DisclosureArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EC7D0F1EDBF5D80065350C /* DisclosureArrow.swift */; };
@@ -64,13 +60,6 @@
 			remoteGlobalIDString = F768D11C1DCF17B40084E2EA;
 			remoteInfo = Bee;
 		};
-		F7B534E61DF5879600BD317F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F768D1151DCF17B40084E2EA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F7B534DD1DF5879600BD317F;
-			remoteInfo = QuickSpell;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -80,7 +69,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				F7B534E81DF5879600BD317F /* QuickSpell.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,11 +123,6 @@
 		F78435AE1ED51C640044A9C1 /* SDStatusBarOverriderPre8_3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDStatusBarOverriderPre8_3.h; sourceTree = "<group>"; };
 		F78435AF1ED51C640044A9C1 /* SDStatusBarOverriderPre8_3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDStatusBarOverriderPre8_3.m; sourceTree = "<group>"; };
 		F78435B71ED51C790044A9C1 /* BeeUITestsBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeeUITestsBridgingHeader.h; sourceTree = "<group>"; };
-		F7B534DE1DF5879600BD317F /* QuickSpell.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QuickSpell.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7B534E01DF5879600BD317F /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
-		F7B534E31DF5879600BD317F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		F7B534E51DF5879600BD317F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F7B534ED1DF6AA1900BD317F /* QuickSpell.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = QuickSpell.xcassets; sourceTree = "<group>"; };
 		F7C22CDA1DF29E5600517239 /* UITableView+ReuseIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+ReuseIdentifiers.swift"; sourceTree = "<group>"; };
 		F7D74ED41DE6E9DE002C278D /* Speller.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speller.framework; path = Carthage/Build/iOS/Speller.framework; sourceTree = "<group>"; };
 		F7EC7D0F1EDBF5D80065350C /* DisclosureArrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisclosureArrow.swift; sourceTree = "<group>"; };
@@ -163,13 +146,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F768D1391DCF17B40084E2EA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F7B534DB1DF5879600BD317F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -254,7 +230,6 @@
 			isa = PBXGroup;
 			children = (
 				F768D11F1DCF17B40084E2EA /* Bee */,
-				F7B534DF1DF5879600BD317F /* QuickSpell */,
 				F768D1341DCF17B40084E2EA /* BeeTests */,
 				F768D13F1DCF17B40084E2EA /* BeeUITests */,
 				F768D11E1DCF17B40084E2EA /* Products */,
@@ -268,7 +243,6 @@
 				F768D11D1DCF17B40084E2EA /* Bee.app */,
 				F768D1311DCF17B40084E2EA /* BeeTests.xctest */,
 				F768D13C1DCF17B40084E2EA /* BeeUITests.xctest */,
-				F7B534DE1DF5879600BD317F /* QuickSpell.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -332,17 +306,6 @@
 			path = SDStatusBarManager;
 			sourceTree = "<group>";
 		};
-		F7B534DF1DF5879600BD317F /* QuickSpell */ = {
-			isa = PBXGroup;
-			children = (
-				F7B534E01DF5879600BD317F /* ActionViewController.swift */,
-				F7B534E21DF5879600BD317F /* MainInterface.storyboard */,
-				F7B534E51DF5879600BD317F /* Info.plist */,
-				F7B534ED1DF6AA1900BD317F /* QuickSpell.xcassets */,
-			);
-			path = QuickSpell;
-			sourceTree = "<group>";
-		};
 		F7C22CD91DF29E3A00517239 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -377,7 +340,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				F7B534E71DF5879600BD317F /* PBXTargetDependency */,
 			);
 			name = Bee;
 			productName = Bee;
@@ -420,23 +382,6 @@
 			productReference = F768D13C1DCF17B40084E2EA /* BeeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		F7B534DD1DF5879600BD317F /* QuickSpell */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F7B534EB1DF5879600BD317F /* Build configuration list for PBXNativeTarget "QuickSpell" */;
-			buildPhases = (
-				F7B534DA1DF5879600BD317F /* Sources */,
-				F7B534DB1DF5879600BD317F /* Frameworks */,
-				F7B534DC1DF5879600BD317F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = QuickSpell;
-			productName = QuickSpell;
-			productReference = F7B534DE1DF5879600BD317F /* QuickSpell.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -467,12 +412,6 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = F768D11C1DCF17B40084E2EA;
 					};
-					F7B534DD1DF5879600BD317F = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = N44EJ7YB22;
-						LastSwiftMigration = 0900;
-						ProvisioningStyle = Manual;
-					};
 				};
 			};
 			buildConfigurationList = F768D1181DCF17B40084E2EA /* Build configuration list for PBXProject "Bee" */;
@@ -491,7 +430,6 @@
 				F768D11C1DCF17B40084E2EA /* Bee */,
 				F768D1301DCF17B40084E2EA /* BeeTests */,
 				F768D13B1DCF17B40084E2EA /* BeeUITests */,
-				F7B534DD1DF5879600BD317F /* QuickSpell */,
 			);
 		};
 /* End PBXProject section */
@@ -524,15 +462,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7B534DC1DF5879600BD317F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F7B534EE1DF6AA1900BD317F /* QuickSpell.xcassets in Resources */,
-				F7B534E41DF5879600BD317F /* MainInterface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -549,7 +478,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -604,14 +533,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7B534DA1DF5879600BD317F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F7B534E11DF5879600BD317F /* ActionViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -624,11 +545,6 @@
 			isa = PBXTargetDependency;
 			target = F768D11C1DCF17B40084E2EA /* Bee */;
 			targetProxy = F768D13D1DCF17B40084E2EA /* PBXContainerItemProxy */;
-		};
-		F7B534E71DF5879600BD317F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F7B534DD1DF5879600BD317F /* QuickSpell */;
-			targetProxy = F7B534E61DF5879600BD317F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -647,14 +563,6 @@
 				F768D12A1DCF17B40084E2EA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		F7B534E21DF5879600BD317F /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F7B534E31DF5879600BD317F /* Base */,
-			);
-			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -881,39 +789,6 @@
 			};
 			name = Release;
 		};
-		F7B534E91DF5879600BD317F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = N44EJ7YB22;
-				INFOPLIST_FILE = QuickSpell/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.jeanetienne.Bee.QuickSpell;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "73c013f4-24ea-41f5-9b20-2db14424832a";
-				PROVISIONING_PROFILE_SPECIFIER = "Wildcard App Development";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		F7B534EA1DF5879600BD317F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = N44EJ7YB22;
-				INFOPLIST_FILE = QuickSpell/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.jeanetienne.Bee.QuickSpell;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6208288e-2804-4a53-9b5d-88c8bd5b381b";
-				PROVISIONING_PROFILE_SPECIFIER = "Bee Extension QuickSpell - Appstore";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -949,15 +824,6 @@
 			buildConfigurations = (
 				F768D14C1DCF17B40084E2EA /* Debug */,
 				F768D14D1DCF17B40084E2EA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F7B534EB1DF5879600BD317F /* Build configuration list for PBXNativeTarget "QuickSpell" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F7B534E91DF5879600BD317F /* Debug */,
-				F7B534EA1DF5879600BD317F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
