@@ -14,11 +14,8 @@ protocol CollapsiblePickerDelegate {
 class CollapsiblePicker: UIView {
     
     enum Height: CGFloat {
-        
-        case collapsed = 26.0
-        
-        case expanded = 175.0
-        
+        case collapsed = 38.0
+        case expanded = 205.0
     }
     
     var items: [String]?
@@ -37,8 +34,6 @@ class CollapsiblePicker: UIView {
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var arrow: DisclosureArrow!
-    
-    @IBOutlet weak var bottomLine: UIView!
     
     @IBOutlet weak var topGradient: GradientView!
     
@@ -122,7 +117,6 @@ class CollapsiblePicker: UIView {
     private func animate(toHeight height: Height) {
         pickerButton.isEnabled = false
         let angle: CGFloat = (height == .collapsed) ? 0 : .pi
-        let bottomLineAlpha: CGFloat = (height == .collapsed) ? 1 : 0
         let gradientsAlpha: CGFloat = (height == .collapsed) ? 0 : 1
         
         UIView.animate(withDuration: animationDuration,
@@ -131,7 +125,6 @@ class CollapsiblePicker: UIView {
                        animations: { 
                         self.heightConstraint.constant = height.rawValue
                         self.arrow.transform = CGAffineTransform(rotationAngle: angle)
-                        self.bottomLine.alpha = bottomLineAlpha
                         self.topGradient.alpha = gradientsAlpha
                         self.bottomGradient.alpha = gradientsAlpha
                         self.superview?.layoutIfNeeded()
