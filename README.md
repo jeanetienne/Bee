@@ -1,4 +1,6 @@
-# Bee
+# 🐝 Bee
+
+The spelling app
 
 ## Acknowledgments
 App icon uses image from Alexander Skowalsky, HU
